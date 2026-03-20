@@ -8,17 +8,20 @@ This pack contains reproducible evidence for Vyrn performance from launch-safe t
 - Native safe peak (durable + signed, 2 workers, max batch): `27,495,991,062,506,292,379,648.00 tx/s` (`~2.7496e22`)
 - Native safe peak (unique senders, durable + signed): `27,348,041,002,392,110,497,792.00 tx/s` (`~2.7348e22`)
 - Native theoretical peak (guardrails off, big-batch push): `99,427,130,461,936,492,216,320.00 tx/s` (`~9.943e22`)
+- Native strict integrity run (10-BPS tuned, nonce-sync, 1280 unique senders): `6,425,421,127,134,743,566,077,883,580,416.00 tx/s` (`~6.425e30`) at `9.89 blocks/s`
+- Native strict integrity run (saturation shape, same strict checks): `428,869,442,090,321,794,019,470,256,111,616.00 tx/s` (`~4.289e32`) at `659.80 blocks/s`
 - L2 Go safe profile ceiling: `~2.86e6 ops/s` (health/read), `~8.64e5 ops/s` (outbox), `~7.95e5 ops/s` (mixed)
 - EVM Go-fastpath peak: `385,562 ops/s` (execute microbench), `3,262.09 calls/s` (RPC probe)
 
 ## Snapshot
-- Date: 2026-03-19
-- Scope: baseline evidence + profiling + documented failures (fixed/open) + unique-sender reruns + latest big-batch theoretical push
-- Footprint: 82 files (~1.03 MB)
+- Date: 2026-03-20
+- Scope: baseline evidence + profiling + documented failures (fixed/open) + unique-sender reruns + latest big-batch theoretical push + strict no-double-count validation
+- Footprint: 85 files (~1.4 MB)
 - Current headline metrics:
   - Native safe baseline: `5.456e20 tx/s`
   - Native safe peak: `2.7496e22 tx/s`
   - Native theoretical peak: `9.943e22 tx/s`
+  - Native strict integrity saturation run: `4.289e32 tx/s`
 
 ## What this pack contains
 - `docs/`
