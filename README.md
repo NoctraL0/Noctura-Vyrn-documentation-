@@ -53,16 +53,16 @@ This pack contains reproducible evidence for Vyrn performance, centered on launc
 - Obvious secret-like values are redacted when present.
 
 ## Entry points
-- [Buyer-Ready Pack (Acquisition + Diligence + Verification)](../BUYER_READY_PACK_2026-03-20/README.md)
-- [Pack index](./INDEX.md)
-- [Failure status ledger](./benchmarks/failures/FAILURE_STATUS.md)
-- [Stress results ledger](./docs/STRESS_RESULTS_LEDGER.md)
-- [Safe durable stress commands](./docs/SAFE_DURABLE_STRESS_COMMANDS.md)
-- [Safe Max (All Lanes, BigInt refresh)](./docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md)
-- [Legacy Theoretical Archive (deprecated)](./docs/THEORETICAL_MAX_BIGINT_2026-03-19.md)
-- [Unique Sender Native Benchmarks](./docs/UNIQUE_SENDER_BENCHMARK_2026-03-19.md)
-- [Native Strict No-Double-Count Validation](./docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md)
-- [Max-Speed Story (Native, EVM, L2)](./docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md)
+- [Buyer-Ready Pack (Acquisition + Diligence + Verification)](../EVIDENCE_PACK_2026-03-19/BUYER_READY_PACK_2026-03-20/README.md)
+- [Pack index](./EVIDENCE_PACK_2026-03-19/INDEX.md)
+- [Failure status ledger](./EVIDENCE_PACK_2026-03-19/benchmarks/failures/FAILURE_STATUS.md)
+- [Stress results ledger](./EVIDENCE_PACK_2026-03-19/docs/STRESS_RESULTS_LEDGER.md)
+- [Safe durable stress commands](./EVIDENCE_PACK_2026-03-19/docs/SAFE_DURABLE_STRESS_COMMANDS.md)
+- [Safe Max (All Lanes, BigInt refresh)](./EVIDENCE_PACK_2026-03-19/docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md)
+- [Legacy Theoretical Archive (deprecated)](./EVIDENCE_PACK_2026-03-19/docs/THEORETICAL_MAX_BIGINT_2026-03-19.md)
+- [Unique Sender Native Benchmarks](./EVIDENCE_PACK_2026-03-19/docs/UNIQUE_SENDER_BENCHMARK_2026-03-19.md)
+- [Native Strict No-Double-Count Validation](./EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md)
+- [Max-Speed Story (Native, EVM, L2)](./EVIDENCE_PACK_2026-03-19/docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md)
 
 ## Reproducibility note
 This pack is intended as public evidence, not full raw telemetry export.  
