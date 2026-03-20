@@ -1,0 +1,59 @@
+{
+  "source_file": "<REPO_ROOT>/bench_runs/safe_peak_final_20260317_190159/data/dag_blocks/00000000-p00000001.mpk",
+  "parent": {
+    "id": "p00000001",
+    "height": 0,
+    "parent_id": null,
+    "state_root": "1bf64ca7cf78849283346419ea79d4afe37bd578861826898e6e7bc277aa01d1",
+    "qc_weight": 3,
+    "child_roots_count": 4,
+    "range_signed": {
+      "kind": "incr_range",
+      "version": 1,
+      "chain_id": 1337,
+      "start_nonce": 0,
+      "count": 1000000000000000000,
+      "delta": 1,
+      "sig_scheme": "ed25519",
+      "sender_sha256": "d6330c30edbcaf8aa0517b1a2e4aba8090a0327ad77123e600100eb601c042f5",
+      "sender_redacted": true,
+      "pubkey_redacted": true,
+      "sig_redacted": true,
+      "digest_redacted": true
+    }
+  },
+  "children_summary": [
+    {
+      "branch": 0,
+      "tx_count": 0,
+      "receipt_count": 0,
+      "state_diff_root": "c9881d25782af8d83a64a6726c27c25978acacbd937f2dc2e48767e0a8751f04"
+    },
+    {
+      "branch": 1,
+      "tx_count": 0,
+      "receipt_count": 0,
+      "state_diff_root": "a46cc7198ae60c41c2c95726c479ef5fa85b15144ba8c589b030be1c775c89d5"
+    },
+    {
+      "branch": 2,
+      "tx_count": 0,
+      "receipt_count": 0,
+      "state_diff_root": "8bdd8c53364d1148031e49174b7d6a0197e484423508413afff67b1ba4705c46"
+    },
+    {
+      "branch": 3,
+      "tx_count": 0,
+      "receipt_count": 0,
+      "state_diff_root": "1ab2e9f11f309660515db19d10f90cfcc385a7934948896b608973a898af4dca"
+    }
+  ],
+  "redactions": [
+    "range_signed.sender",
+    "range_signed.pubkey",
+    "range_signed.sig",
+    "range_signed.digest",
+    "parent.finality_proof",
+    "parent.transfer_proof"
+  ]
+}

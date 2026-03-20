@@ -1,0 +1,22 @@
+[go-stress] batch_size=36380000000000000000 exceeds int64 sender planning; set --senders-per-worker explicitly if needed
+[go-stress] rpc=msgpack+unix:///tmp/dag_rpc_safe_run_unique_1773970052.sock method=miner_mineRangeSigned sign=true sig_scheme=ed25519 workers=1 batch_size=36380000000000000000 soak_tps=545700000000000000000 duration=10s
+[go-stress] unique_senders_per_worker=1000 total_unique_senders=1000 nonce_sync=false
+[go-stress] mineRange opts: mode=direct root_mode=range assume_new=true chain_id=1337
+[worker 0] blocks=20 txs=727600000000000000000 elapsed=1.333616s last=0.003042s
+[worker 0] blocks=40 txs=1455200000000000000000 elapsed=2.667336s last=0.003147s
+[worker 0] blocks=60 txs=2182800000000000000000 elapsed=4.000896s last=0.003165s
+[worker 0] blocks=80 txs=2910400000000000000000 elapsed=5.333644s last=0.003046s
+[worker 0] blocks=100 txs=3638000000000000000000 elapsed=6.667078s last=0.003051s
+[worker 0] blocks=120 txs=4365600000000000000000 elapsed=8.000471s last=0.003083s
+[worker 0] blocks=140 txs=5093200000000000000000 elapsed=9.333887s last=0.003029s
+
+=== STATS (go-stress) ===
+elapsed_sec       : 10.014986
+txs_committed     : 5457000000000000000000
+blocks_mined      : 150
+tx_per_second     : 544883412544347439104.00
+blocks_per_second : 14.98
+avg_txs_per_block : 36380000000000000000.00
+p50               : 0.002490s
+p90               : 0.003119s
+p99               : 0.003356s

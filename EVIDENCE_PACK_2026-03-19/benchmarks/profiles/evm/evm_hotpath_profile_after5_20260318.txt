@@ -1,0 +1,116 @@
+=== noop_direct ===
+iterations   : 40000
+elapsed_sec  : 0.520196
+per_call_us  : 13.005
+stats_file   : /tmp/vyrn_evm_profile_yzn6yexb/noop_direct.txt
+         1680110 function calls in 0.516 seconds
+
+   Ordered by: cumulative time
+   List reduced from 51 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    40000    0.012    0.000    0.516    0.000 <REPO_ROOT>/profile_evm_hotpath_v1.py:51(_noop_direct)
+    40000    0.015    0.000    0.501    0.000 <REPO_ROOT>/contract_runtime_stub.py:587(_run_evm)
+    40000    0.122    0.000    0.486    0.000 <REPO_ROOT>/contract_runtime_stub.py:434(_run_evm_go)
+    40000    0.125    0.000    0.306    0.000 <REPO_ROOT>/go_evm_fastpath.py:293(run_state_native)
+    40000    0.112    0.000    0.126    0.000 <REPO_ROOT>/go_evm_fastpath.py:348(_run_once)
+    80000    0.015    0.000    0.018    0.000 <REPO_ROOT>/go_evm_fastpath.py:135(_to_u64)
+   280000    0.018    0.000    0.018    0.000 {method 'get' of 'dict' objects}
+   280008    0.017    0.000    0.017    0.000 {built-in method builtins.isinstance}
+   200000    0.014    0.000    0.014    0.000 {built-in method _ctypes.byref}
+    40000    0.010    0.000    0.012    0.000 <REPO_ROOT>/contract_runtime_stub.py:123(_to_bytes)
+    80000    0.010    0.000    0.010    0.000 {built-in method builtins.min}
+    80000    0.008    0.000    0.008    0.000 {built-in method builtins.max}
+    80000    0.007    0.000    0.007    0.000 {built-in method builtins.getattr}
+    40000    0.005    0.000    0.005    0.000 <REPO_ROOT>/go_evm_fastpath.py:111(_code_buffer)
+    40009    0.004    0.000    0.004    0.000 {method 'startswith' of 'str' objects}
+    40001    0.004    0.000    0.004    0.000 {method 'split' of 'str' objects}
+    40000    0.003    0.000    0.003    0.000 {method 'items' of 'dict' objects}
+    40000    0.003    0.000    0.003    0.000 {built-in method builtins.hasattr}
+    40000    0.003    0.000    0.003    0.000 {method 'hex' of 'bytes' objects}
+    40004    0.003    0.000    0.003    0.000 {built-in method builtins.len}
+    40001    0.002    0.000    0.003    0.000 <REPO_ROOT>/go_evm_fastpath.py:35(available)
+    40000    0.002    0.000    0.002    0.000 <REPO_ROOT>/contract_runtime_stub.py:256(_go_fastpath_status)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.12/ctypes/__init__.py:343(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method _ctypes.dlopen}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.12/pathlib.py:854(exists)
+
+
+
+=== incr_direct ===
+iterations   : 20000
+elapsed_sec  : 0.265783
+per_call_us  : 13.289
+stats_file   : /tmp/vyrn_evm_profile_yzn6yexb/incr_direct.txt
+         840005 function calls in 0.264 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    20000    0.006    0.000    0.264    0.000 <REPO_ROOT>/profile_evm_hotpath_v1.py:56(_incr_direct)
+    20000    0.008    0.000    0.256    0.000 <REPO_ROOT>/contract_runtime_stub.py:587(_run_evm)
+    20000    0.062    0.000    0.249    0.000 <REPO_ROOT>/contract_runtime_stub.py:434(_run_evm_go)
+    20000    0.065    0.000    0.156    0.000 <REPO_ROOT>/go_evm_fastpath.py:293(run_state_native)
+    20000    0.057    0.000    0.064    0.000 <REPO_ROOT>/go_evm_fastpath.py:348(_run_once)
+    40000    0.008    0.000    0.009    0.000 <REPO_ROOT>/go_evm_fastpath.py:135(_to_u64)
+   140000    0.009    0.000    0.009    0.000 {method 'get' of 'dict' objects}
+   140000    0.008    0.000    0.008    0.000 {built-in method builtins.isinstance}
+   100000    0.007    0.000    0.007    0.000 {built-in method _ctypes.byref}
+    20000    0.005    0.000    0.006    0.000 <REPO_ROOT>/contract_runtime_stub.py:123(_to_bytes)
+    40000    0.005    0.000    0.005    0.000 {built-in method builtins.min}
+    40000    0.004    0.000    0.004    0.000 {built-in method builtins.max}
+    40000    0.004    0.000    0.004    0.000 {built-in method builtins.getattr}
+    20000    0.003    0.000    0.003    0.000 <REPO_ROOT>/go_evm_fastpath.py:111(_code_buffer)
+    20000    0.002    0.000    0.002    0.000 {method 'split' of 'str' objects}
+    20000    0.002    0.000    0.002    0.000 {method 'startswith' of 'str' objects}
+    20000    0.002    0.000    0.002    0.000 {built-in method builtins.hasattr}
+    20000    0.002    0.000    0.002    0.000 {method 'items' of 'dict' objects}
+    20000    0.001    0.000    0.001    0.000 {method 'hex' of 'bytes' objects}
+    20002    0.001    0.000    0.001    0.000 {built-in method builtins.len}
+    20000    0.001    0.000    0.001    0.000 <REPO_ROOT>/go_evm_fastpath.py:35(available)
+    20000    0.001    0.000    0.001    0.000 <REPO_ROOT>/contract_runtime_stub.py:256(_go_fastpath_status)
+        1    0.000    0.000    0.000    0.000 <REPO_ROOT>/go_evm_fastpath.py:119(_code_buffer_cached)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {method 'from_buffer_copy' of '_ctypes.PyCArrayType' objects}
+
+
+
+=== incr_mutable ===
+iterations   : 5000
+elapsed_sec  : 0.459090
+per_call_us  : 91.818
+stats_file   : /tmp/vyrn_evm_profile_yzn6yexb/incr_mutable.txt
+         905004 function calls (880004 primitive calls) in 0.454 seconds
+
+   Ordered by: cumulative time
+   List reduced from 51 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     5000    0.003    0.000    0.458    0.000 <REPO_ROOT>/profile_evm_hotpath_v1.py:61(_incr_mutable)
+     5000    0.010    0.000    0.455    0.000 <REPO_ROOT>/contract_runtime_stub.py:1381(call_mutable)
+     5000    0.112    0.000    0.266    0.000 <REPO_ROOT>/contract_runtime_stub.py:228(_save_state)
+     5000    0.005    0.000    0.168    0.000 <REPO_ROOT>/contract_runtime_stub.py:587(_run_evm)
+     5000    0.008    0.000    0.141    0.000 <REPO_ROOT>/contract_runtime_stub.py:389(_run_evm_python)
+     5000    0.079    0.000    0.132    0.000 <REPO_ROOT>/evm_layer.py:526(run_evm)
+     5000    0.085    0.000    0.086    0.000 {built-in method _io.open}
+     5000    0.011    0.000    0.067    0.000 /usr/lib/python3.12/json/__init__.py:120(dump)
+40000/35000    0.012    0.000    0.046    0.000 /usr/lib/python3.12/json/encoder.py:414(_iterencode)
+55000/35000    0.017    0.000    0.036    0.000 /usr/lib/python3.12/json/encoder.py:334(_iterencode_dict)
+     5000    0.005    0.000    0.014    0.000 <REPO_ROOT>/contract_runtime_stub.py:434(_run_evm_go)
+   140000    0.010    0.000    0.010    0.000 {built-in method builtins.isinstance}
+     5000    0.006    0.000    0.010    0.000 <REPO_ROOT>/contract_runtime_stub.py:123(_to_bytes)
+     5000    0.004    0.000    0.008    0.000 <REPO_ROOT>/contract_runtime_stub.py:341(_evm_ctx)
+     5000    0.005    0.000    0.008    0.000 <REPO_ROOT>/contract_runtime_stub.py:71(_go_addr_compatible)
+    10000    0.004    0.000    0.008    0.000 <REPO_ROOT>/evm_layer.py:319(get_storage)
+     5000    0.005    0.000    0.006    0.000 /usr/lib/python3.12/json/encoder.py:205(iterencode)
+    60000    0.006    0.000    0.006    0.000 {method 'hex' of 'bytes' objects}
+    60000    0.006    0.000    0.006    0.000 {method 'add' of 'set' objects}
+    55000    0.006    0.000    0.006    0.000 {built-in method builtins.getattr}
+    50000    0.005    0.000    0.005    0.000 <REPO_ROOT>/evm_layer.py:559(_charge_gas)
+    45000    0.004    0.000    0.004    0.000 {method 'to_bytes' of 'int' objects}
+     5000    0.004    0.000    0.004    0.000 /usr/lib/python3.12/json/encoder.py:161(default)
+     5000    0.002    0.000    0.004    0.000 <REPO_ROOT>/evm_layer.py:323(set_storage)
+    15000    0.002    0.000    0.004    0.000 <REPO_ROOT>/evm_layer.py:223(_acc_storage)
+
+
+

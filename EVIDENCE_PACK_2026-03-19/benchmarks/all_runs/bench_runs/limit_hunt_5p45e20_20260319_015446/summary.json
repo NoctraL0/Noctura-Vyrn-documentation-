@@ -1,0 +1,315 @@
+{
+  "run_dir": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446",
+  "best_config": {
+    "best_native": {
+      "name": "n1",
+      "batch": 4000,
+      "senders": 8,
+      "elapsed_sec": "20.023036",
+      "txs_committed": "1608000",
+      "blocks_mined": "402",
+      "tx_per_second": "80307.50",
+      "blocks_per_second": "20.08",
+      "error": "",
+      "log": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/native_n1.log"
+    },
+    "best_compat": {
+      "workers": 24,
+      "calls_per_sec": 1013.1134286348407,
+      "calls_ok": 20286,
+      "calls_err": 0,
+      "error": "",
+      "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/compat_w24.json"
+    },
+    "best_bpf": {
+      "workers": 8,
+      "calls_per_sec": 2260.5886804631523,
+      "calls_ok": 45220,
+      "calls_err": 0,
+      "error": "",
+      "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/bpf_w8.json"
+    },
+    "best_l2": {
+      "name": "l1",
+      "mode": "mixed",
+      "workers": 16,
+      "items_per_batch": 400,
+      "app_ok_per_sec": 609.8580095223562,
+      "app_ok": 12207,
+      "app_reject": 2189,
+      "req_per_sec": 719.2197841471155,
+      "error": "",
+      "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/l2_l1.json"
+    }
+  },
+  "sweeps": {
+    "native": [
+      {
+        "name": "n1",
+        "batch": 4000,
+        "senders": 8,
+        "elapsed_sec": "20.023036",
+        "txs_committed": "1608000",
+        "blocks_mined": "402",
+        "tx_per_second": "80307.50",
+        "blocks_per_second": "20.08",
+        "error": "",
+        "log": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/native_n1.log"
+      },
+      {
+        "name": "n2",
+        "batch": 8000,
+        "senders": 8,
+        "elapsed_sec": "20.095975",
+        "txs_committed": "1312000",
+        "blocks_mined": "164",
+        "tx_per_second": "65286.71",
+        "blocks_per_second": "8.16",
+        "error": "",
+        "log": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/native_n2.log"
+      },
+      {
+        "name": "n3",
+        "batch": 8000,
+        "senders": 16,
+        "elapsed_sec": "20.042017",
+        "txs_committed": "1232000",
+        "blocks_mined": "154",
+        "tx_per_second": "61470.86",
+        "blocks_per_second": "7.68",
+        "error": "",
+        "log": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/native_n3.log"
+      }
+    ],
+    "compat": [
+      {
+        "workers": 8,
+        "calls_per_sec": 873.6784252550249,
+        "calls_ok": 17483,
+        "calls_err": 0,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/compat_w8.json"
+      },
+      {
+        "workers": 16,
+        "calls_per_sec": 927.7330154992336,
+        "calls_ok": 18572,
+        "calls_err": 0,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/compat_w16.json"
+      },
+      {
+        "workers": 24,
+        "calls_per_sec": 1013.1134286348407,
+        "calls_ok": 20286,
+        "calls_err": 0,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/compat_w24.json"
+      },
+      {
+        "workers": 32,
+        "calls_per_sec": 1004.7689178151355,
+        "calls_ok": 20132,
+        "calls_err": 0,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/compat_w32.json"
+      }
+    ],
+    "bpf": [
+      {
+        "workers": 8,
+        "calls_per_sec": 2260.5886804631523,
+        "calls_ok": 45220,
+        "calls_err": 0,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/bpf_w8.json"
+      },
+      {
+        "workers": 16,
+        "calls_per_sec": 0.0,
+        "calls_ok": 0,
+        "calls_err": 0,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/bpf_w16.json"
+      },
+      {
+        "workers": 24,
+        "calls_per_sec": 0.0,
+        "calls_ok": 0,
+        "calls_err": 0,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/bpf_w24.json"
+      },
+      {
+        "workers": 32,
+        "calls_per_sec": 0.0,
+        "calls_ok": 0,
+        "calls_err": 0,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/bpf_w32.json"
+      }
+    ],
+    "l2": [
+      {
+        "name": "l1",
+        "mode": "mixed",
+        "workers": 16,
+        "items_per_batch": 400,
+        "app_ok_per_sec": 609.8580095223562,
+        "app_ok": 12207,
+        "app_reject": 2189,
+        "req_per_sec": 719.2197841471155,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/l2_l1.json"
+      },
+      {
+        "name": "l2",
+        "mode": "mixed",
+        "workers": 24,
+        "items_per_batch": 400,
+        "app_ok_per_sec": 241.02243269520716,
+        "app_ok": 4828,
+        "app_reject": 9237,
+        "req_per_sec": 702.1500654221394,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/l2_l2.json"
+      },
+      {
+        "name": "l3",
+        "mode": "batch",
+        "workers": 16,
+        "items_per_batch": 800,
+        "app_ok_per_sec": 222.91185903025723,
+        "app_ok": 4470,
+        "app_reject": 0,
+        "req_per_sec": 222.91185903025723,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/l2_l3.json"
+      },
+      {
+        "name": "l4",
+        "mode": "batch",
+        "workers": 24,
+        "items_per_batch": 800,
+        "app_ok_per_sec": 217.35041158149676,
+        "app_ok": 4366,
+        "app_reject": 0,
+        "req_per_sec": 217.35041158149676,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/l2_l4.json"
+      },
+      {
+        "name": "l5",
+        "mode": "batch",
+        "workers": 32,
+        "items_per_batch": 1200,
+        "app_ok_per_sec": 153.22157274696798,
+        "app_ok": 3089,
+        "app_reject": 0,
+        "req_per_sec": 153.22157274696798,
+        "error": "",
+        "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/l2_l5.json"
+      }
+    ]
+  },
+  "final": {
+    "native": {
+      "elapsed_sec": "60.064096",
+      "txs_committed": "3452000",
+      "blocks_mined": "863",
+      "tx_per_second": "57471.94",
+      "blocks_per_second": "14.37",
+      "avg_txs_per_block": "4000.00",
+      "p50": "0.055602s",
+      "p90": "0.102785s",
+      "p99": "0.116864s"
+    },
+    "compat_mix": {
+      "engine": "mix",
+      "workers": 24,
+      "duration_sec": 60,
+      "rpc": "http://127.0.0.1:38545",
+      "calls_ok": 3058,
+      "calls_err": 0,
+      "calls_per_sec": 50.92724283210512,
+      "elapsed_sec": 60.04644724399259,
+      "p50_ms": 51.609248999739066,
+      "p90_ms": 1376.2603590002982,
+      "p99_ms": 1625.9526579960948,
+      "addresses": {
+        "wasm": "ctr:b0dd303a2c18155e91e123fc3c3812d112ebd1b9",
+        "evm": "ctr:6e340b9cffb37a989ca544e6bb780a2c78901d3f"
+      },
+      "error_reasons": {}
+    },
+    "bpf": {
+      "engine": "bpf",
+      "workers": 8,
+      "duration_sec": 60,
+      "rpc": "http://127.0.0.1:38545",
+      "address": "ctr:a8100ae6aa1940d0b663bb31cd466142ebbdbd51",
+      "calls_ok": 53888,
+      "calls_err": 0,
+      "calls_per_sec": 898.0501080213905,
+      "elapsed_sec": 60.00556040099764,
+      "p50_ms": 5.049573999713175,
+      "p90_ms": 20.774675998836756,
+      "p99_ms": 49.714999011484906,
+      "error_reasons": {}
+    },
+    "l2": {
+      "elapsed_sec": 62.82999968099466,
+      "requests_total": 49201,
+      "req_per_sec": 783.0813345504874,
+      "transport_ok": 49201,
+      "transport_err": 0,
+      "rpc_err": 0,
+      "app_ok": 12404,
+      "app_reject": 36797,
+      "latency_ms": {
+        "p50": 17.546162009239197,
+        "p90": 23.792339998180978,
+        "p99": 30.374136011232622
+      },
+      "by_method": {
+        "outbox_add": 12297,
+        "batch_build": 12404,
+        "inbox_add": 24500
+      },
+      "top_errors": {
+        "channel defi at capacity": 36797
+      },
+      "health": {
+        "samples": 56,
+        "max_inflight": 6,
+        "max_queued": 0,
+        "max_rejected_overload": 0,
+        "max_backlog_pct": 0.25,
+        "max_bridge_retry_due": 0,
+        "max_bridge_pending": 0
+      },
+      "config": {
+        "rpc": "http://127.0.0.1:38660",
+        "mode": "mixed",
+        "workers": 16,
+        "rps_target": 0.0,
+        "items_per_batch": 400,
+        "payload_bytes": 192,
+        "duration_sec": 60
+      }
+    },
+    "statuses": "statuses native=0 compat=0 bpf=0 l2=0\n"
+  },
+  "profiles": {
+    "dag_inferno_svg": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/profiles/dag_inferno.svg",
+    "main_inferno_svg": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/profiles/main_rpc_inferno.svg",
+    "l2_inferno_svg": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/profiles/l2_rpc_inferno.svg"
+  },
+  "persistence": {
+    "main_wal_log_exists": true,
+    "main_wal_log_bytes": 0,
+    "main_wal_checkpoint_exists": false,
+    "main_snapshot_exists": false,
+    "dag_blocks_count": 2435
+  }
+}

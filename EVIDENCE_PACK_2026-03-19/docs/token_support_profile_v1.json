@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "profile": "token_support_v1",
+  "scope": {
+    "in_scope": [
+      "erc20",
+      "bep20",
+      "cw20"
+    ],
+    "out_of_scope": [
+      "rebasing",
+      "fee_on_transfer_reflection",
+      "blacklist_pause_custom_semantics",
+      "proxy_upgrade_trust_emulation"
+    ]
+  },
+  "erc20_bep20": {
+    "required_methods": [
+      "name",
+      "symbol",
+      "decimals",
+      "totalSupply",
+      "balanceOf",
+      "transfer",
+      "approve",
+      "allowance",
+      "transferFrom"
+    ],
+    "required_events": [
+      "Transfer(address,address,uint256)",
+      "Approval(address,address,uint256)"
+    ],
+    "required_behaviors": [
+      "zero_transfer",
+      "self_transfer",
+      "approve_overwrite",
+      "allowance_decrement",
+      "insufficient_balance_revert",
+      "insufficient_allowance_revert"
+    ]
+  },
+  "cw20": {
+    "required_execute": [
+      "transfer",
+      "increase_allowance",
+      "decrease_allowance",
+      "transfer_from"
+    ],
+    "required_query": [
+      "token_info",
+      "balance",
+      "allowance"
+    ],
+    "required_behaviors": [
+      "allowance_lifecycle",
+      "transfer_from_allowance_consumption",
+      "failure_rollback",
+      "action_event_visibility"
+    ]
+  },
+  "numeric_policy": {
+    "erc20_amount_width": "uint256",
+    "u64_fastpath_behavior": "fail_open_to_full_width_engine",
+    "silent_truncation_allowed": false
+  },
+  "hashing_policy": {
+    "required": "keccak256",
+    "sha3_256_fallback_compliant": false
+  }
+}

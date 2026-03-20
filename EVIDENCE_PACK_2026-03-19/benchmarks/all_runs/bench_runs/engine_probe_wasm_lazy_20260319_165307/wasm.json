@@ -1,0 +1,17 @@
+{
+  "engine": "wasm",
+  "workers": 16,
+  "duration_sec": 8,
+  "rpc": "msgpack+http://127.0.0.1:36545",
+  "calls_ok": 6959,
+  "calls_err": 0,
+  "calls_per_sec": 868.1427485451441,
+  "elapsed_sec": 8.01596282600076,
+  "p50_ms": 18.343105009989813,
+  "p90_ms": 18.996583006810397,
+  "p99_ms": 19.93106899317354,
+  "addresses": {
+    "wasm": "ctr:b0dd303a2c18155e91e123fc3c3812d112ebd1b9"
+  },
+  "error_reasons": {}
+}

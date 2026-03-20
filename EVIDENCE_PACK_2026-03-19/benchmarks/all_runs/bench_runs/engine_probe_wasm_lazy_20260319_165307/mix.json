@@ -1,0 +1,18 @@
+{
+  "engine": "mix",
+  "workers": 16,
+  "duration_sec": 8,
+  "rpc": "msgpack+http://127.0.0.1:36545",
+  "calls_ok": 10392,
+  "calls_err": 0,
+  "calls_per_sec": 1296.610310732226,
+  "elapsed_sec": 8.014744224987226,
+  "p50_ms": 1.7496929795015603,
+  "p90_ms": 26.285161991836503,
+  "p99_ms": 29.77478801039979,
+  "addresses": {
+    "wasm": "ctr:b0dd303a2c18155e91e123fc3c3812d112ebd1b9",
+    "evm": "ctr:6e340b9cffb37a989ca544e6bb780a2c78901d3f"
+  },
+  "error_reasons": {}
+}

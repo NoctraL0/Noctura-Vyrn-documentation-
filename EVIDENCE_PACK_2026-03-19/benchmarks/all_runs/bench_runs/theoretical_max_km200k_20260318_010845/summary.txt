@@ -1,0 +1,8 @@
+theoretical_max_summary
+unsigned_w4_t1200e18.log	tx_per_second=1199912824653410992128.00	blocks_per_second=1199.91	p99=0.000562s
+unsigned_w2_t1200e18.log	tx_per_second=1199827843901645651968.00	blocks_per_second=1199.83	p99=0.000361s
+signed_w2_t1200e18.log	tx_per_second=1198227978916485660672.00	blocks_per_second=1198.23	p99=0.000419s
+unsigned_w1_t1000e18.log	tx_per_second=999876694206193729536.00	blocks_per_second=999.88	p99=0.000255s
+signed_w2_t900e18.log	tx_per_second=898981658144420003840.00	blocks_per_second=898.98	p99=0.000403s
+signed_w1_t900e18.log	tx_per_second=898160915360158842880.00	blocks_per_second=898.16	p99=0.000302s
+BEST	unsigned_w4_t1200e18.log	1199912824653410992128.00	1199.91	0.000562s

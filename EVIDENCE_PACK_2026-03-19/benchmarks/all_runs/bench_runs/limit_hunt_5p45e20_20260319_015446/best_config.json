@@ -1,0 +1,42 @@
+{
+  "best_native": {
+    "name": "n1",
+    "batch": 4000,
+    "senders": 8,
+    "elapsed_sec": "20.023036",
+    "txs_committed": "1608000",
+    "blocks_mined": "402",
+    "tx_per_second": "80307.50",
+    "blocks_per_second": "20.08",
+    "error": "",
+    "log": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/native_n1.log"
+  },
+  "best_compat": {
+    "workers": 24,
+    "calls_per_sec": 1013.1134286348407,
+    "calls_ok": 20286,
+    "calls_err": 0,
+    "error": "",
+    "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/compat_w24.json"
+  },
+  "best_bpf": {
+    "workers": 8,
+    "calls_per_sec": 2260.5886804631523,
+    "calls_ok": 45220,
+    "calls_err": 0,
+    "error": "",
+    "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/bpf_w8.json"
+  },
+  "best_l2": {
+    "name": "l1",
+    "mode": "mixed",
+    "workers": 16,
+    "items_per_batch": 400,
+    "app_ok_per_sec": 609.8580095223562,
+    "app_ok": 12207,
+    "app_reject": 2189,
+    "req_per_sec": 719.2197841471155,
+    "error": "",
+    "file": "<REPO_ROOT>/bench_runs/limit_hunt_5p45e20_20260319_015446/sweeps/l2_l1.json"
+  }
+}

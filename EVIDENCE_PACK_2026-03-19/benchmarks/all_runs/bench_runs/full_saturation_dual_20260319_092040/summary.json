@@ -1,0 +1,340 @@
+{
+  "run_dir": "<REPO_ROOT>/bench_runs/full_saturation_dual_20260319_092040",
+  "phase1_max": {
+    "statuses": "native=0 compat=0 bpf=0 l2=0\n",
+    "native": {
+      "elapsed_sec": "60.000563",
+      "txs_committed": "267660000",
+      "blocks_mined": "66915",
+      "tx_per_second": "4460958.12",
+      "blocks_per_second": "1115.24",
+      "avg_txs_per_block": "4000.00",
+      "p50": "0.000809s",
+      "p90": "0.000999s",
+      "p99": "0.001984s"
+    },
+    "compat_mix": {
+      "engine": "mix",
+      "workers": 24,
+      "duration_sec": 60,
+      "rpc": "http://127.0.0.1:39545",
+      "calls_ok": 5892,
+      "calls_err": 0,
+      "calls_per_sec": 98.15322621209285,
+      "elapsed_sec": 60.02859230799368,
+      "p50_ms": 7.14924099156633,
+      "p90_ms": 510.2686019963585,
+      "p99_ms": 536.6849989950424,
+      "addresses": {
+        "wasm": "ctr:b0dd303a2c18155e91e123fc3c3812d112ebd1b9",
+        "evm": "ctr:6e340b9cffb37a989ca544e6bb780a2c78901d3f"
+      },
+      "error_reasons": {}
+    },
+    "bpf": {
+      "engine": "bpf",
+      "workers": 8,
+      "duration_sec": 60,
+      "rpc": "http://127.0.0.1:39545",
+      "address": "ctr:a8100ae6aa1940d0b663bb31cd466142ebbdbd51",
+      "calls_ok": 104968,
+      "calls_err": 0,
+      "calls_per_sec": 1749.333547077754,
+      "elapsed_sec": 60.00456583900086,
+      "p50_ms": 4.419796008733101,
+      "p90_ms": 6.038066989276558,
+      "p99_ms": 7.558577999589033,
+      "error_reasons": {}
+    },
+    "l2": {
+      "elapsed_sec": 60.023024738999084,
+      "requests_total": 38665,
+      "req_per_sec": 644.169469434918,
+      "transport_ok": 38665,
+      "transport_err": 0,
+      "rpc_err": 0,
+      "app_ok": 19763,
+      "app_reject": 18902,
+      "latency_ms": {
+        "p50": 23.34751299349591,
+        "p90": 29.69769699848257,
+        "p99": 37.860533004277386
+      },
+      "by_method": {
+        "outbox_add": 9598,
+        "inbox_add": 19304,
+        "batch_build": 9763
+      },
+      "top_errors": {
+        "channel defi at capacity": 18902
+      },
+      "health": {
+        "samples": 59,
+        "max_inflight": 6,
+        "max_queued": 0,
+        "max_rejected_overload": 0,
+        "max_backlog_pct": 0.25,
+        "max_bridge_retry_due": 0,
+        "max_bridge_pending": 0
+      },
+      "config": {
+        "rpc": "http://127.0.0.1:39660",
+        "mode": "mixed",
+        "workers": 16,
+        "rps_target": 0.0,
+        "items_per_batch": 400,
+        "payload_bytes": 192,
+        "duration_sec": 60
+      }
+    }
+  },
+  "phase2_inferno": {
+    "statuses": "native=0 compat=0 bpf=0 l2=0\n",
+    "native": {
+      "elapsed_sec": "60.000523",
+      "txs_committed": "257728000",
+      "blocks_mined": "64432",
+      "tx_per_second": "4295429.22",
+      "blocks_per_second": "1073.86",
+      "avg_txs_per_block": "4000.00",
+      "p50": "0.000802s",
+      "p90": "0.001289s",
+      "p99": "0.002172s"
+    },
+    "compat_mix": {
+      "engine": "mix",
+      "workers": 24,
+      "duration_sec": 60,
+      "rpc": "http://127.0.0.1:39545",
+      "calls_ok": 3203,
+      "calls_err": 0,
+      "calls_per_sec": 53.35735681283464,
+      "elapsed_sec": 60.02921042800881,
+      "p50_ms": 46.8844739953056,
+      "p90_ms": 1299.2132140061585,
+      "p99_ms": 1605.7491510000546,
+      "addresses": {
+        "wasm": "ctr:b0dd303a2c18155e91e123fc3c3812d112ebd1b9",
+        "evm": "ctr:6e340b9cffb37a989ca544e6bb780a2c78901d3f"
+      },
+      "error_reasons": {}
+    },
+    "bpf": {
+      "engine": "bpf",
+      "workers": 8,
+      "duration_sec": 60,
+      "rpc": "http://127.0.0.1:39545",
+      "address": "ctr:a8100ae6aa1940d0b663bb31cd466142ebbdbd51",
+      "calls_ok": 56013,
+      "calls_err": 0,
+      "calls_per_sec": 933.4897753158986,
+      "elapsed_sec": 60.003870938002365,
+      "p50_ms": 4.853274003835395,
+      "p90_ms": 19.784242002060637,
+      "p99_ms": 48.307266013580374,
+      "error_reasons": {}
+    },
+    "l2": {
+      "elapsed_sec": 60.02601596601016,
+      "requests_total": 35409,
+      "req_per_sec": 589.8942221994278,
+      "transport_ok": 35409,
+      "transport_err": 0,
+      "rpc_err": 0,
+      "app_ok": 18841,
+      "app_reject": 16568,
+      "latency_ms": {
+        "p50": 25.078792998101562,
+        "p90": 33.28746800252702,
+        "p99": 45.0973429979058
+      },
+      "by_method": {
+        "batch_build": 8841,
+        "outbox_add": 8767,
+        "inbox_add": 17801
+      },
+      "top_errors": {
+        "channel defi at capacity": 16568
+      },
+      "health": {
+        "samples": 58,
+        "max_inflight": 6,
+        "max_queued": 0,
+        "max_rejected_overload": 0,
+        "max_backlog_pct": 0.25,
+        "max_bridge_retry_due": 0,
+        "max_bridge_pending": 0
+      },
+      "config": {
+        "rpc": "http://127.0.0.1:39660",
+        "mode": "mixed",
+        "workers": 16,
+        "rps_target": 0.0,
+        "items_per_batch": 400,
+        "payload_bytes": 192,
+        "duration_sec": 60
+      }
+    }
+  },
+  "profiles": {
+    "dag_inferno_svg": "<REPO_ROOT>/bench_runs/full_saturation_dual_20260319_092040/profiles/dag_inferno.svg",
+    "main_inferno_svg": "<REPO_ROOT>/bench_runs/full_saturation_dual_20260319_092040/profiles/main_rpc_inferno.svg",
+    "l2_inferno_svg": "<REPO_ROOT>/bench_runs/full_saturation_dual_20260319_092040/profiles/l2_rpc_inferno.svg",
+    "dag_top": [
+      {
+        "pct": 25.24,
+        "samples": 786,
+        "name": "_sign_parent_quorum (multi_dag_runtime.py:1240)"
+      },
+      {
+        "pct": 25.14,
+        "samples": 783,
+        "name": "sign (validator_stub.py:187)"
+      },
+      {
+        "pct": 12.97,
+        "samples": 404,
+        "name": "_sign_bytes (validator_stub.py:140)"
+      },
+      {
+        "pct": 12.11,
+        "samples": 377,
+        "name": "from_private_bytes (cryptography/hazmat/primitives/asymmetric/ed25519.py:90)"
+      },
+      {
+        "pct": 12.04,
+        "samples": 375,
+        "name": "process_request_thread (socketserver.py:692)"
+      },
+      {
+        "pct": 12.04,
+        "samples": 375,
+        "name": "process_request_thread (dag_rpc_server.py:1060)"
+      },
+      {
+        "pct": 12.04,
+        "samples": 375,
+        "name": "handle (http/server.py:438)"
+      },
+      {
+        "pct": 12.04,
+        "samples": 375,
+        "name": "finish_request (socketserver.py:362)"
+      },
+      {
+        "pct": 12.04,
+        "samples": 375,
+        "name": "_factory (dag_rpc_server.py:4607)"
+      },
+      {
+        "pct": 12.04,
+        "samples": 375,
+        "name": "__init__ (socketserver.py:761)"
+      }
+    ],
+    "main_top": [
+      {
+        "pct": 10.75,
+        "samples": 949,
+        "name": "execute (wasm_runtime.py:1316)"
+      },
+      {
+        "pct": 8.6,
+        "samples": 759,
+        "name": "_contract_call_common (rpc_server_v1.py:7536)"
+      },
+      {
+        "pct": 8.57,
+        "samples": 757,
+        "name": "exists (&lt;frozen genericpath&gt;:19)"
+      },
+      {
+        "pct": 8.57,
+        "samples": 757,
+        "name": "_load_head (rpc_server_v1.py:2698)"
+      },
+      {
+        "pct": 8.57,
+        "samples": 757,
+        "name": "_contract_chain_ctx (rpc_server_v1.py:7492)"
+      },
+      {
+        "pct": 7.08,
+        "samples": 625,
+        "name": "_execute_with_wasmtime (wasm_runtime.py:1216)"
+      },
+      {
+        "pct": 6.18,
+        "samples": 546,
+        "name": "write (socketserver.py:840)"
+      },
+      {
+        "pct": 6.18,
+        "samples": 546,
+        "name": "flush_headers (http/server.py:542)"
+      },
+      {
+        "pct": 6.18,
+        "samples": 546,
+        "name": "end_headers (http/server.py:538)"
+      },
+      {
+        "pct": 6.18,
+        "samples": 546,
+        "name": "_send (rpc_server_v1.py:10690)"
+      }
+    ],
+    "l2_top": [
+      {
+        "pct": 19.14,
+        "samples": 934,
+        "name": "add_inbox (l2_batcher_v1.py:273)"
+      },
+      {
+        "pct": 19.09,
+        "samples": 932,
+        "name": "_check_channel (l2_batcher_v1.py:258)"
+      },
+      {
+        "pct": 16.98,
+        "samples": 829,
+        "name": "build_batch (l2_batcher_v1.py:314)"
+      },
+      {
+        "pct": 16.35,
+        "samples": 798,
+        "name": "outbox_add (l2_rpc_server.py:525)"
+      },
+      {
+        "pct": 16.35,
+        "samples": 798,
+        "name": "outbox_add (l2_core_v1.py:584)"
+      },
+      {
+        "pct": 12.7,
+        "samples": 620,
+        "name": "asdict (dataclasses.py:1322)"
+      },
+      {
+        "pct": 12.7,
+        "samples": 620,
+        "name": "_asdict_inner (dataclasses.py:1332)"
+      },
+      {
+        "pct": 12.66,
+        "samples": 618,
+        "name": "_asdict_inner (dataclasses.py:1366)"
+      },
+      {
+        "pct": 12.6,
+        "samples": 615,
+        "name": "&lt;genexpr&gt; (dataclasses.py:1366)"
+      },
+      {
+        "pct": 11.29,
+        "samples": 551,
+        "name": "_asdict_inner (dataclasses.py:1375)"
+      }
+    ]
+  }
+}
