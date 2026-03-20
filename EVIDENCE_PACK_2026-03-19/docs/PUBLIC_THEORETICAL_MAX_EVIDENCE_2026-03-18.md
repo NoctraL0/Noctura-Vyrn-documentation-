@@ -1,8 +1,12 @@
-# Vyrn-Chain Public Benchmark Evidence (AI-Safe)
+# Vyrn-Chain Public Legacy Theoretical Evidence (AI-Safe, Deprecated)
 
 Date: 2026-03-18
-Benchmark class: theoretical maximum (non-launch-safe)
+Benchmark class: legacy theoretical maximum (non-launch-safe, deprecated for current headline benchmarking)
 Execution lane: native range lane (`mineRange` / `mineRangeSigned` style stress path)
+
+Current benchmark-grade headline class is tracked in:
+- `docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`
+- `docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md`
 
 ## Headline Result
 Peak measured throughput in this run set:
@@ -84,4 +88,3 @@ DAG_EXTERNAL_PARENT_QC=1 DAG_VALIDATORS_REQUIRE_PRIV=0 \
 - No private keys, auth tokens, cookies, wallet seed phrases, or secrets included.
 - No personal absolute home directory paths required for reproduction.
 - No host-specific identity metadata included.
-

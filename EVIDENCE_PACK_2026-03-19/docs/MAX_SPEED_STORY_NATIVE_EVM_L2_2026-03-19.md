@@ -2,7 +2,7 @@
 
 This is the benchmark story behind the current speed envelope, using the latest logs and summaries in this pack.
 
-## Chapter 1: Native has baseline-safe, peak-safe, and theoretical peak evidence
+## Chapter 1: Native has baseline-safe, peak-safe, strict-integrity, and legacy-theoretical records
 
 The native lane now has four clearly separated truths:
 
@@ -28,17 +28,18 @@ The native lane now has four clearly separated truths:
     - `benchmarks/all_runs/bench_runs/strict_no_doublecount_saturation_20260320_031157.log`
     - `docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`
 
-- **Theoretical peak** (guardrails off, big-batch push):
+- **Legacy theoretical archive (deprecated, non-benchmark-grade)**:
   - best measured: `99,427,130,461,936,492,216,320.00 tx/s` (`~9.943e22`)
   - prior e22 guardrails-off reference: `6,973,281,673,524,083,163,136.00 tx/s` (`~6.973e21`)
   - evidence:
     - `benchmarks/all_runs/bench_runs/theory_bigbatch_push_20260319_205422/summary_theory_bigbatch_push.json`
     - `benchmarks/all_runs/bench_runs/theory_bigbatch_push_20260319_205422/theory_w2_t100000e18_b50e18.log`
+    - `docs/THEORETICAL_MAX_BIGINT_2026-03-19.md`
 
 Interpretation:
 - Safe numbers are no longer represented as one ambiguous value.
 - Strict integrity measurements now include e30+ and e32-class native results with nonce-sync and sender uniqueness controls.
-- Theoretical numbers are now above the safe peaks and explicitly marked non-launch-safe.
+- Legacy theoretical runs are retained for history but excluded from current benchmark-grade headline claims.
 
 ## Chapter 2: EVM is measurable on two ceilings
 
@@ -77,7 +78,7 @@ Evidence:
 - Safe peak (unique): `~2.7348e22 tx/s`
 - Strict integrity (10-BPS tuned): `~6.425e30 tx/s`
 - Strict integrity (saturation): `~4.289e32 tx/s`
-- Theoretical peak: `~9.943e22 tx/s`
+- Legacy theoretical archive (deprecated): `~9.943e22 tx/s`
 
 ### EVM maxes
 - Fastpath execute microbench: `385,562 ops/s`
@@ -94,7 +95,7 @@ The strongest honest framing is:
 - "Safe native baseline is in the `5e20` class."
 - "Safe native throughput peak has crossed `2.7e22` in this evidence pack."
 - "Strict integrity native runs are in the `e30+` and `e32` classes."
-- "Theoretical native peak has crossed `9.9e22` with guardrails off."
+- "Legacy theoretical runs are archived and marked deprecated for current benchmark-grade claims."
 - "EVM and L2 are measured with lane-level maxima, not blended scoreboard numbers."
 
 ## Unit note

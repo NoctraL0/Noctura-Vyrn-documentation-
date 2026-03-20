@@ -20,7 +20,7 @@ Lean, public-safe baseline evidence set (curated for validity and low bloat).
 - `docs/`: architecture, performance, compatibility, and safe command baselines.
   - includes fresh BigInt refresh docs:
     - `docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md`
-    - `docs/THEORETICAL_MAX_BIGINT_2026-03-19.md`
+    - `docs/THEORETICAL_MAX_BIGINT_2026-03-19.md` (legacy theoretical archive, deprecated for headline benchmarking)
     - `docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md`
     - `docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`
 - `benchmarks/all_runs/bench_runs/`: curated high-signal run set only:
@@ -31,8 +31,8 @@ Lean, public-safe baseline evidence set (curated for validity and low bloat).
   - `engine_probe_wasm_lazy_20260319_165307`
   - `theoretical_max_km200k_20260318_010845`
   - `bigint_highbatch_refresh_20260319_201037`
-  - `e22_guardrails_ab_20260319_201707`
-  - `theory_bigbatch_push_20260319_205422`
+  - `e22_guardrails_ab_20260319_201707` (legacy theoretical archive, deprecated for headline benchmarking)
+  - `theory_bigbatch_push_20260319_205422` (legacy theoretical archive, deprecated for headline benchmarking)
   - `engine_probe_20260319_163228`
   - `native_safe_1w_15bps_bigint_hi_20260319_175137.log`
   - `native_2w_550bps_bigblk_FINAL_20260319_180047.log`

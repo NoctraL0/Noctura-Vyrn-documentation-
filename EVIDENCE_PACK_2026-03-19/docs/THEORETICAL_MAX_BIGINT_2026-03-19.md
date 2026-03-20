@@ -1,7 +1,12 @@
-# Theoretical Max (BigInt + Larger Blocks) - 2026-03-19
+# Legacy Theoretical Archive (BigInt + Larger Blocks, Deprecated) - 2026-03-19
 
-## Headline Result
-Latest theoretical max in this pack is:
+## Status
+This document is retained for historical context only.
+
+Theoretical guardrails-off runs in this file are **deprecated** and **not benchmark-grade** for current public headline claims.
+
+## Legacy record
+Latest legacy theoretical value in this archive is:
 - `99,427,130,461,936,492,216,320.00 tx/s` (`~9.943e22`)
 - `avg_txs_per_block = 50,000,000,000,000,000,000`
 - case: `theory_w2_t100000e18_b50e18`, guardrails OFF
@@ -18,6 +23,7 @@ Strict integrity reference (separate from theoretical methodology):
 - It uses memory-store profile and disabled durability/safety gates to find ceiling.
 - It is not an EVM opcode TPS claim.
 - Pack-level maximum magnitude can be higher under strict launch-safe saturation profiles; those are tracked in `SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md` and `NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`.
+- Current benchmark headlines should use strict-integrity results, not this legacy archive.
 
 ## Theoretical Profile Used
 - `DAG_STORE=memory`
@@ -37,7 +43,7 @@ Strict integrity reference (separate from theoretical methodology):
 
 | Case | Workers | Target TPS | Batch Size | Measured TPS | Avg TX/Block | Notes |
 |---|---:|---:|---:|---:|---:|---|
-| `theory_w2_t100000e18_b50e18` | 2 | `1.0e23` | `5e19` | `99,427,130,461,936,492,216,320.00` | `5e19` | **best overall in this pack** |
+| `theory_w2_t100000e18_b50e18` | 2 | `1.0e23` | `5e19` | `99,427,130,461,936,492,216,320.00` | `5e19` | legacy best in this deprecated archive |
 | `theory_w2_t55000e18_b50e18` | 2 | `5.5e22` | `5e19` | `54,688,541,410,705,190,944,768.00` | `5e19` | same profile family |
 | `theory_w2_t27500e18_b50e18` | 2 | `2.75e22` | `5e19` | `27,341,212,203,569,106,649,088.00` | `5e19` | same profile family |
 | `e22_guardrails_off` | 2 | `1.0e22` | `9e18` | `6,973,281,673,524,083,163,136.00` | `9e18` | prior theoretical reference |
@@ -45,7 +51,7 @@ Strict integrity reference (separate from theoretical methodology):
 | `w4_t1800e18_b8e18` | 4 | `1.8e21` | `8e18` | `1,799,153,673,314,329,952,256.00` | `8e18` | prior BigInt sweep |
 | `w2_t2200e18_b9e18` | 2 | `2.2e21` | `9e18` | `2,191,865,149,215,769,100,288.00` | `9e18` | prior BigInt sweep |
 
-Best case right now:
+Best legacy case in this archive:
 - `theory_w2_t100000e18_b50e18.log` from `theory_bigbatch_push_20260319_205422`
 
 ## Command Pattern Used
