@@ -20,7 +20,7 @@ This pack contains reproducible evidence for Vyrn performance from launch-safe t
 - Current headline metrics:
   - Native safe baseline: `5.456e20 tx/s`
   - Native safe peak: `2.7496e22 tx/s`
-  - Native theoretical peak: `9.943e22 tx/s`
+  - Native theoretical peak: `9.943e22 tx/s` -Outdated-
   - Native strict integrity saturation run: `4.289e32 tx/s`
 
 ## What this pack contains
