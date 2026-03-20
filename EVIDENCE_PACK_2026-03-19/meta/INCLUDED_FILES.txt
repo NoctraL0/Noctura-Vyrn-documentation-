@@ -28,6 +28,8 @@
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/limit_hunt_5p45e20_20260319_015446/profiles/l2_rpc_inferno.svg
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/limit_hunt_5p45e20_20260319_015446/profiles/main_rpc_inferno.svg
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/limit_hunt_5p45e20_20260319_015446/summary.json
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/native_2w_550bps_bigblk_FINAL_20260319_180047.log
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/native_safe_1w_15bps_bigint_hi_20260319_175137.log
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/native_unique_1w15bps_big_20260319_182744.log
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/native_unique_2w550bps_big_20260319_182803.log
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/safe_peak_final_20260317_190159/PUBLIC_SAFE_SHAREPACK.md
@@ -37,6 +39,11 @@
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theoretical_max_km200k_20260318_010845/signed_w2_t1200e18.log
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theoretical_max_km200k_20260318_010845/signed_w2_t900e18.log
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theoretical_max_km200k_20260318_010845/summary.txt
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theory_bigbatch_push_20260319_205422/dag.log
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theory_bigbatch_push_20260319_205422/summary_theory_bigbatch_push.json
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theory_bigbatch_push_20260319_205422/theory_w2_t100000e18_b50e18.log
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theory_bigbatch_push_20260319_205422/theory_w2_t27500e18_b50e18.log
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theory_bigbatch_push_20260319_205422/theory_w2_t55000e18_b50e18.log
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/failures/FAILURE_STATUS.md
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/failures/fixed/FIXED_engine_probe_nodelay_mix.json
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/failures/fixed/FIXED_engine_probe_opt_mix.json

@@ -3,8 +3,8 @@
 Lean, public-safe baseline evidence set (curated for validity and low bloat).
 
 ## Current footprint
-- 61 files
-- ~1.1 MB
+- 82 files
+- ~1.03 MB
 
 ## Validity checks (passed)
 - All `*.json` parse cleanly with `jq`.
@@ -25,7 +25,10 @@ Lean, public-safe baseline evidence set (curated for validity and low bloat).
   - `theoretical_max_km200k_20260318_010845`
   - `bigint_highbatch_refresh_20260319_201037`
   - `e22_guardrails_ab_20260319_201707`
+  - `theory_bigbatch_push_20260319_205422`
   - `engine_probe_20260319_163228`
+  - `native_safe_1w_15bps_bigint_hi_20260319_175137.log`
+  - `native_2w_550bps_bigblk_FINAL_20260319_180047.log`
   - `native_unique_1w15bps_big_20260319_182744.log`
   - `native_unique_2w550bps_big_20260319_182803.log`
 - `benchmarks/failures/`: fixed/open issue evidence and status ledger.

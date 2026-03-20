@@ -1,0 +1,10 @@
+{
+  "run_dir": "bench_runs/theory_bigbatch_push_20260319_205422",
+  "cases": [
+    {"case":"theory_w2_t100000e18_b50e18","tx_per_second":"99427130461936492216320.00","blocks_per_second":"1988.54","txs_committed":"994350000000000000000000","p99":"0.000601s"}
+    ,
+    {"case":"theory_w2_t27500e18_b50e18","tx_per_second":"27341212203569106649088.00","blocks_per_second":"546.82","txs_committed":"273500000000000000000000","p99":"0.000788s"}
+    ,
+    {"case":"theory_w2_t55000e18_b50e18","tx_per_second":"54688541410705190944768.00","blocks_per_second":"1093.77","txs_committed":"547000000000000000000000","p99":"0.000721s"}
+  ]
+}

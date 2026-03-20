@@ -2,32 +2,36 @@
 
 This is the benchmark story behind the current speed envelope, using the latest logs and summaries in this pack.
 
-## Chapter 1: Native went from launch-safe monster to theoretical monster
+## Chapter 1: Native has baseline-safe, peak-safe, and theoretical peak evidence
 
-The native lane now has two clearly separated truths:
+The native lane now has three clearly separated truths:
 
-- **Launch-safe high-throughput baseline** (durable + signed):
-  - `549,341,337,575,504,347,136.00 tx/s` (`~5.493e20`)
-  - with `5,000,000,000,000,000,000` tx/block average
+- **Launch-safe baseline** (durable + signed, 1 worker):
+  - `545,623,145,378,860,630,016.00 tx/s` (`~5.456e20`)
   - evidence:
-    - `benchmarks/all_runs/bench_runs/bigint_highbatch_refresh_20260319_201037/summary_bigint_highbatch.json`
-    - `benchmarks/all_runs/bench_runs/bigint_highbatch_refresh_20260319_201037/safe_highbatch_stress.log`
+    - `benchmarks/all_runs/bench_runs/native_safe_1w_15bps_bigint_hi_20260319_175137.log`
 
-- **Theoretical push at e22 shape** (same stress shape, guardrails toggled):
-  - guardrails **on**: `2,909,009,305,851,459,534,848.00 tx/s` (`~2.909e21`)
-  - guardrails **off**: `6,973,281,673,524,083,163,136.00 tx/s` (`~6.973e21`)
-  - off/on gain: `2.397x`
+- **Launch-safe throughput peak** (durable + signed, max big-block shape):
+  - non-unique sender peak: `27,495,991,062,506,292,379,648.00 tx/s` (`~2.7496e22`)
+  - unique sender peak: `27,348,041,002,392,110,497,792.00 tx/s` (`~2.7348e22`)
+  - unique penalty vs non-unique: `-0.538%`
   - evidence:
-    - `benchmarks/all_runs/bench_runs/e22_guardrails_ab_20260319_201707/summary_e22_guardrails_compare.json`
-    - `benchmarks/all_runs/bench_runs/e22_guardrails_ab_20260319_201707/guardrails_on_stress.log`
-    - `benchmarks/all_runs/bench_runs/e22_guardrails_ab_20260319_201707/guardrails_off_stress.log`
+    - `benchmarks/all_runs/bench_runs/native_2w_550bps_bigblk_FINAL_20260319_180047.log`
+    - `benchmarks/all_runs/bench_runs/native_unique_2w550bps_big_20260319_182803.log`
+    - `docs/UNIQUE_SENDER_BENCHMARK_2026-03-19.md`
+
+- **Theoretical peak** (guardrails off, big-batch push):
+  - best measured: `99,427,130,461,936,492,216,320.00 tx/s` (`~9.943e22`)
+  - prior e22 guardrails-off reference: `6,973,281,673,524,083,163,136.00 tx/s` (`~6.973e21`)
+  - evidence:
+    - `benchmarks/all_runs/bench_runs/theory_bigbatch_push_20260319_205422/summary_theory_bigbatch_push.json`
+    - `benchmarks/all_runs/bench_runs/theory_bigbatch_push_20260319_205422/theory_w2_t100000e18_b50e18.log`
 
 Interpretation:
-- Native is not just fast at one profile.
-- It scales through multiple regimes: durable launch-safe and extreme theoretical.
-- Big-int block sizing is now part of the real measured path, not just a claim.
+- Safe numbers are no longer represented as one ambiguous value.
+- Theoretical numbers are now above the safe peaks and explicitly marked non-launch-safe.
 
-## Chapter 2: EVM is no longer “just there”, it has measurable headroom
+## Chapter 2: EVM is measurable on two ceilings
 
 The EVM compatibility lane shows two useful max views:
 
@@ -40,13 +44,12 @@ The EVM compatibility lane shows two useful max views:
   - `3,262.09 calls/s` (`engine=evm`, `workers=16`, msgpack RPC)
   - evidence:
     - `benchmarks/all_runs/bench_runs/engine_probe_20260319_163228/evm.json`
-    - this value is reflected in the story as the current observed RPC-lane peak
 
 Interpretation:
-- The EVM path has a high local execute ceiling and a separately measurable networked-RPC ceiling.
-- Those are different bottlenecks, and both are now quantified.
+- Local execute ceiling and RPC-lane ceiling are different bottlenecks.
+- Both are measured and documented.
 
-## Chapter 3: L2 is already in high six-figure to low seven-figure ops territory
+## Chapter 3: L2 is in high six-figure to low seven-figure ops territory
 
 Under the Go L2 safe profile, measured ceilings are:
 
@@ -57,16 +60,13 @@ Under the Go L2 safe profile, measured ceilings are:
 Evidence:
 - `docs/L2_GO_ENGINE_BASELINE.md`
 
-Interpretation:
-- L2 is already operating in a range that can outrun many compatibility-layer assumptions.
-- The read/control path is substantially faster than mixed write-heavy paths, which is expected and useful for production planning.
-
-## Chapter 4: The complete max-speed picture right now
+## Chapter 4: Complete max-speed picture right now
 
 ### Native maxes
-- Safe durable high-batch: `~5.493e20 tx/s`
-- e22 guardrails-on: `~2.909e21 tx/s`
-- e22 guardrails-off: `~6.973e21 tx/s` (current highest observed native value in this pack)
+- Safe baseline: `~5.456e20 tx/s`
+- Safe peak (non-unique): `~2.7496e22 tx/s`
+- Safe peak (unique): `~2.7348e22 tx/s`
+- Theoretical peak: `~9.943e22 tx/s`
 
 ### EVM maxes
 - Fastpath execute microbench: `385,562 ops/s`
@@ -77,12 +77,13 @@ Interpretation:
 - outbox-only: `~8.64e5 ops/s`
 - health/read: `~2.86e6 ops/s`
 
-## Chapter 5: What this means for public messaging
+## Chapter 5: Public messaging that stays accurate
 
 The strongest honest framing is:
-- “Launch-safe native is already in the `5e20` class.”
-- “Theoretical native with e22 stress shape has crossed `6.9e21` in current evidence.”
-- “EVM and L2 are measured with explicit lane-level maxima, not hand-wavy aggregate numbers.”
+- "Safe native baseline is in the `5e20` class."
+- "Safe native throughput peak has crossed `2.7e22` in this evidence pack."
+- "Theoretical native peak has crossed `9.9e22` with guardrails off."
+- "EVM and L2 are measured with lane-level maxima, not blended scoreboard numbers."
 
 ## Unit note
 

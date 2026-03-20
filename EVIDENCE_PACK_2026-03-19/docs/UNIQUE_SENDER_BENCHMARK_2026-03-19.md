@@ -68,11 +68,13 @@ Result:
 
 1) 1-worker test:
 - Non-unique baseline: `545623145378860630016.00`
+- Baseline log: `<REPO_ROOT>/bench_runs/native_safe_1w_15bps_bigint_hi_20260319_175137.log`
 - Unique sender run: `544883412544347439104.00`
 - Delta: `-0.136%`
 
 2) 2-worker test:
 - Non-unique baseline: `27495991062506292379648.00`
+- Baseline log: `<REPO_ROOT>/bench_runs/native_2w_550bps_bigblk_FINAL_20260319_180047.log`
 - Unique sender run: `27348041002392110497792.00`
 - Delta: `-0.538%`
 
