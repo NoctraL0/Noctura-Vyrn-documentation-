@@ -42,6 +42,9 @@ Public-safe, curated benchmark and architecture evidence for Vyrn-Chain.
 - [Failure status ledger](./benchmarks/failures/FAILURE_STATUS.md)
 - [Stress results ledger](./docs/STRESS_RESULTS_LEDGER.md)
 - [Safe durable stress commands](./docs/SAFE_DURABLE_STRESS_COMMANDS.md)
+- [Safe Max (All Lanes, BigInt refresh)](./docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md)
+- [Theoretical Max (BigInt + larger blocks)](./docs/THEORETICAL_MAX_BIGINT_2026-03-19.md)
+- [Max-Speed Story (Native, EVM, L2)](./docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md)
 
 ## Reproducibility note
 This pack is intended as public evidence, not full raw telemetry export.  

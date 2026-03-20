@@ -1,0 +1,17 @@
+{
+  "engine": "evm",
+  "workers": 16,
+  "duration_sec": 15,
+  "rpc": "msgpack+http://127.0.0.1:30545",
+  "calls_ok": 48947,
+  "calls_err": 0,
+  "calls_per_sec": 3262.0921913781845,
+  "elapsed_sec": 15.00478745799046,
+  "p50_ms": 4.878749983618036,
+  "p90_ms": 5.366127006709576,
+  "p99_ms": 5.91834299848415,
+  "addresses": {
+    "evm": "ctr:6e340b9cffb37a989ca544e6bb780a2c78901d3f"
+  },
+  "error_reasons": {}
+}

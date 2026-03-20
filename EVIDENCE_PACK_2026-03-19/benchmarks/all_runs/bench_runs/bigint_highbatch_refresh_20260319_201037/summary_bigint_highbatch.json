@@ -1,0 +1,84 @@
+{
+  "run_dir": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/bigint_highbatch_refresh_20260319_201037",
+  "safe": {
+    "file": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/bigint_highbatch_refresh_20260319_201037/safe_highbatch_stress.log",
+    "elapsed_sec": "15.017985",
+    "txs_committed": "8250000000000000000000",
+    "blocks_mined": "1650",
+    "tx_per_second": "549341337575504347136.00",
+    "blocks_per_second": "109.87",
+    "avg_txs_per_block": "5000000000000000000.00",
+    "p50": "0.004824s",
+    "p90": "0.005377s",
+    "p99": "0.010949s",
+    "error": ""
+  },
+  "theory": {
+    "theory_dag.log": {
+      "file": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/bigint_highbatch_refresh_20260319_201037/theory_dag.log",
+      "elapsed_sec": "",
+      "txs_committed": "",
+      "blocks_mined": "",
+      "tx_per_second": "",
+      "blocks_per_second": "",
+      "avg_txs_per_block": "",
+      "p50": "",
+      "p90": "",
+      "p99": "",
+      "error": ""
+    },
+    "theory_w2_t2200e18_b9e18.log": {
+      "file": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/bigint_highbatch_refresh_20260319_201037/theory_w2_t2200e18_b9e18.log",
+      "elapsed_sec": "12.006213",
+      "txs_committed": "26316000000000000000000",
+      "blocks_mined": "2924",
+      "tx_per_second": "2191865149215769100288.00",
+      "blocks_per_second": "243.54",
+      "avg_txs_per_block": "9000000000000000000.00",
+      "p50": "0.000152s",
+      "p90": "0.000319s",
+      "p99": "0.001365s",
+      "error": ""
+    },
+    "theory_w4_t1200e18_b6e18.log": {
+      "file": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/bigint_highbatch_refresh_20260319_201037/theory_w4_t1200e18_b6e18.log",
+      "elapsed_sec": "12.002125",
+      "txs_committed": "14400000000000000000000",
+      "blocks_mined": "2400",
+      "tx_per_second": "1199787582007826710528.00",
+      "blocks_per_second": "199.96",
+      "avg_txs_per_block": "6000000000000000000.00",
+      "p50": "0.000470s",
+      "p90": "0.000708s",
+      "p99": "0.002559s",
+      "error": ""
+    },
+    "theory_w4_t1800e18_b8e18.log": {
+      "file": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/bigint_highbatch_refresh_20260319_201037/theory_w4_t1800e18_b8e18.log",
+      "elapsed_sec": "12.005645",
+      "txs_committed": "21600000000000000000000",
+      "blocks_mined": "2700",
+      "tx_per_second": "1799153673314329952256.00",
+      "blocks_per_second": "224.89",
+      "avg_txs_per_block": "8000000000000000000.00",
+      "p50": "0.000339s",
+      "p90": "0.000624s",
+      "p99": "0.001688s",
+      "error": ""
+    }
+  },
+  "theory_best_case": "theory_w2_t2200e18_b9e18.log",
+  "theory_best": {
+    "file": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/bigint_highbatch_refresh_20260319_201037/theory_w2_t2200e18_b9e18.log",
+    "elapsed_sec": "12.006213",
+    "txs_committed": "26316000000000000000000",
+    "blocks_mined": "2924",
+    "tx_per_second": "2191865149215769100288.00",
+    "blocks_per_second": "243.54",
+    "avg_txs_per_block": "9000000000000000000.00",
+    "p50": "0.000152s",
+    "p90": "0.000319s",
+    "p99": "0.001365s",
+    "error": ""
+  }
+}

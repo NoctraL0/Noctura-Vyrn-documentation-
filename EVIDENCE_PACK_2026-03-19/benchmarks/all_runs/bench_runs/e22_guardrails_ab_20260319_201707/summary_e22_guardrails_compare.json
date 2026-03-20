@@ -1,0 +1,38 @@
+{
+  "run_dir": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/e22_guardrails_ab_20260319_201707",
+  "shape": {
+    "workers": 2,
+    "target_tps": "10000000000000000000000",
+    "duration": "12s",
+    "batch_size_big": "9000000000000000000",
+    "signed": true,
+    "sig_scheme": "ed25519"
+  },
+  "guardrails_on": {
+    "file": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/e22_guardrails_ab_20260319_201707/guardrails_on_stress.log",
+    "elapsed_sec": "12.004087",
+    "txs_committed": "34920000000000000000000",
+    "blocks_mined": "3880",
+    "tx_per_second": "2909009305851459534848.00",
+    "blocks_per_second": "323.22",
+    "avg_txs_per_block": "9000000000000000000.00",
+    "p50": "0.004234s",
+    "p90": "0.004604s",
+    "p99": "0.005230s",
+    "error": ""
+  },
+  "guardrails_off": {
+    "file": "/home/vyrn/vyrn/Documents/Vyrn-Chain/bench_runs/e22_guardrails_ab_20260319_201707/guardrails_off_stress.log",
+    "elapsed_sec": "12.000376",
+    "txs_committed": "83682000000000000000000",
+    "blocks_mined": "9298",
+    "tx_per_second": "6973281673524083163136.00",
+    "blocks_per_second": "774.81",
+    "avg_txs_per_block": "9000000000000000000.00",
+    "p50": "0.000120s",
+    "p90": "0.000171s",
+    "p99": "0.000404s",
+    "error": ""
+  },
+  "off_over_on_ratio": 2.3971328175187883
+}
