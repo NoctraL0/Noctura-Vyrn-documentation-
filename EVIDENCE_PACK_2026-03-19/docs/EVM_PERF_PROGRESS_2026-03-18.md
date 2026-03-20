@@ -59,12 +59,6 @@ Latest key lines:
 - `python_state_machine`: `183,427 ops/s`
 - `python_callvalue_store`: `184,743 ops/s`
 
-## Notes
-
-- Native chain consensus/runtime code paths were not modified.
-- Main remaining floor is Python-call boundary + runtime object overhead.
-- Mutable path is still dominated by state file persistence (`_save_state`).
-
 ## Next step to approach ns-class latency
 
 To get close to native nanosecond-class behavior, EVM execution needs to run fully in native process/hot loop without per-call Python boundary (or with batched execution per crossing). Current per-call Python orchestration is still microsecond-scale.

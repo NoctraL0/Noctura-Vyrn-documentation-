@@ -8,10 +8,16 @@ Latest theoretical max in this pack is:
 
 This supersedes the earlier `~6.973e21` e22 guardrails-off result in this file.
 
+Strict integrity reference (separate from theoretical methodology):
+- `428,869,442,090,321,794,019,470,256,111,616.00 tx/s` (`~4.289e32`)
+- case: `strict_no_doublecount_saturation_20260320_031157`
+- profile class: durable + signed + `nonce-sync` + unique sender pool
+
 ## Scope and Honesty
 - This benchmark is theoretical only (non-launch-safe).
 - It uses memory-store profile and disabled durability/safety gates to find ceiling.
 - It is not an EVM opcode TPS claim.
+- Pack-level maximum magnitude can be higher under strict launch-safe saturation profiles; those are tracked in `SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md` and `NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`.
 
 ## Theoretical Profile Used
 - `DAG_STORE=memory`
@@ -76,3 +82,5 @@ DAG_EXTERNAL_PARENT_QC=1 DAG_VALIDATORS_REQUIRE_PRIV=0 \
 - `benchmarks/all_runs/bench_runs/e22_guardrails_ab_20260319_201707/summary_e22_guardrails_compare.json`
 - `benchmarks/all_runs/bench_runs/e22_guardrails_ab_20260319_201707/guardrails_on_stress.log`
 - `benchmarks/all_runs/bench_runs/e22_guardrails_ab_20260319_201707/guardrails_off_stress.log`
+- `benchmarks/all_runs/bench_runs/strict_no_doublecount_saturation_20260320_031157.log` (strict integrity reference)
+- `docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`

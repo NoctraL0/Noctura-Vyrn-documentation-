@@ -35,6 +35,8 @@
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/safe_peak_final_20260317_190159/PUBLIC_SAFE_SHAREPACK.md
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/safe_peak_final_20260317_190159/sample_block_sanitized.json
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/safe_peak_final_20260317_190159/stress.log
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/strict_no_doublecount_20260320_031126.log
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/strict_no_doublecount_saturation_20260320_031157.log
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theoretical_max_km200k_20260318_010845/signed_w1_t900e18.log
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theoretical_max_km200k_20260318_010845/signed_w2_t1200e18.log
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/benchmarks/all_runs/bench_runs/theoretical_max_km200k_20260318_010845/signed_w2_t900e18.log
@@ -67,6 +69,7 @@
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/docs/GO_EVM_GAP_ANALYSIS_2026-03-17.md
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/docs/L2_GO_ENGINE_BASELINE.md
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md
+/home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/docs/PUBLIC_THEORETICAL_MAX_EVIDENCE_2026-03-18.md
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/docs/SAFE_DURABLE_STRESS_COMMANDS.md
 /home/vyrn/vyrn/Documents/Vyrn-Chain/public_release/EVIDENCE_PACK_2026-03-19/docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md

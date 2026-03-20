@@ -19,6 +19,3 @@
   - `0` skips
 - Artifact:
   - `bench_runs/compat_baseline_20260319_142732_wasmtime_fix/wasm_post_fix.log`
-
-## Notes
-- This avoids breaking the OS-managed Python environment (`PEP 668`) while ensuring repo-local scripts still use real Wasmtime execution.

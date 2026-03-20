@@ -21,14 +21,15 @@ Canonical record of proven stress results with evidence paths.
 - Durable best run DAG env line:
   - [/tmp/vyrn_safe_durable_20260315_000630/safe_w2_550/dag.log](/tmp/vyrn_safe_durable_20260315_000630/safe_w2_550/dag.log)
 
-## Notes
+## Session: 2026-03-20 (America/Los_Angeles) - Strict Counter-Integrity Validation
 
-- `5.4e20+` was proven in this session on signed lane with memory storage.
-- Best durable result in this session was `~4.48e20` with `log` storage and block persistence enabled.
+| Run ID | Approx Time | Mode | Storage | Signed Safety Flags | Workers | Target TPS | Measured TX/s | Proof Log |
+|---|---|---|---|---|---:|---:|---:|---|
+| `strict_no_doublecount_20260320_031126` | 03:11 | `miner_mineRangeSigned` (`ed25519`) | `log` + persisted blocks | `NATIVE_SIG_VERIFY=1`, `NATIVE_SIG_REQUIRE=1`, validator quorum checks all `=1`, `nonce-sync=on`, `senders-per-worker=64`, `stop-on-reject=on` | 20 | `6500000000000000000000000000000` | `6425421127134743566077883580416.00` | [`../benchmarks/all_runs/bench_runs/strict_no_doublecount_20260320_031126.log`](../benchmarks/all_runs/bench_runs/strict_no_doublecount_20260320_031126.log) |
+| `strict_no_doublecount_saturation_20260320_031157` | 03:11 | `miner_mineRangeSigned` (`ed25519`) | `log` + persisted blocks | `NATIVE_SIG_VERIFY=1`, `NATIVE_SIG_REQUIRE=1`, validator quorum checks all `=1`, `nonce-sync=on`, `senders-per-worker=64`, `stop-on-reject=on` | 20 | `65000000000000000000000000000000000000000` | `428869442090321794019470256111616.00` | [`../benchmarks/all_runs/bench_runs/strict_no_doublecount_saturation_20260320_031157.log`](../benchmarks/all_runs/bench_runs/strict_no_doublecount_saturation_20260320_031157.log) |
 
 ## Row Template
 
 Use this row format for future additions:
 
 | `run_id/case` | HH:MM | `miner_mineRangeSigned` (`ed25519`) | `log`/`memory` | safety flags summary | N | target | measured | `/tmp/.../stress.log` |
-

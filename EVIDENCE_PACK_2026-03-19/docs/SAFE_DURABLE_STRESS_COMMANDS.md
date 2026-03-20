@@ -67,10 +67,32 @@ find /tmp/vyrn_safe_run/dag_blocks -type f | wc -l
 ./stress --rpc msgpack+unix:///tmp/dag_rpc_safe_run.sock --workers 2 --sender-base addr:safe2h_$(date +%s) --soak --tps 700000000000000000000 --duration 10s --batch-size 1000000000000000000 --mine-range --sign --sig-scheme ed25519 --range-mode direct --range-root range --assume-new --stop-on-reject
 ```
 
-## 6) Stop DAG
+## 6) Strict no-double-count validation (BigInt, 10-BPS tuned)
+
+Use this when you want stricter counter confidence (nonce sync + larger sender pool).
+
+DAG launch requirement for this profile:
+- `DAG_MAX_TX_PER_BATCH >= 650000000000000000000000000000`
+- `DAG_MAX_RANGE_COUNT >= 650000000000000000000000000000`
+
+```bash
+cd <REPO_ROOT>/go_dag
+
+./stress \
+  --rpc msgpack+unix://<REPO_ROOT>/.runtime_bigint_docs/dag_rpc_safe_run.sock \
+  --workers 20 \
+  --senders-per-worker 64 \
+  --sender-base addr:strict_$(date +%s) \
+  --soak --tps 6500000000000000000000000000000 --duration 10s \
+  --batch-size-big 650000000000000000000000000000 \
+  --mine-range --sign --sig-scheme ed25519 \
+  --nonce-sync --range-mode direct --range-root range --assume-new \
+  --stop-on-reject --progress-every 20 --lat-samples 50000
+```
+
+## 7) Stop DAG
 
 ```bash
 pkill -f "dag_rpc_server.py --host 127.0.0.1 --port 18705" || true
 rm -f /tmp/dag_rpc_safe_run.sock
 ```
-

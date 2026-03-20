@@ -15,10 +15,6 @@ L2_FALLBACK_UNKNOWN=0 \
 ./run_stack.sh
 ```
 
-Notes:
-- `L2_FALLBACK_UNKNOWN=0` keeps fallback to critical/internal failure paths only.
-- Fallback sidecar runs on `127.0.0.1:8661` by default when enabled.
-
 ## 2) Health Checks
 
 ```bash

@@ -1,10 +1,16 @@
-# Vyrn Public Evidence Pack (2026-03-19)
+# Vyrn Public Evidence Pack (2026-03-20)
 
 Lean, public-safe baseline evidence set (curated for validity and low bloat).
 
+## Headline metrics
+- Native strict integrity (saturation): `~4.289e32 tx/s`
+- Native strict integrity (10-BPS tuned): `~6.425e30 tx/s`
+- Native safe peak (durable): `~2.7496e22 tx/s`
+- Native safe baseline (durable): `~5.456e20 tx/s`
+
 ## Current footprint
-- 82 files
-- ~1.03 MB
+- 85 files
+- ~1.4 MB
 
 ## Validity checks (passed)
 - All `*.json` parse cleanly with `jq`.
@@ -16,6 +22,7 @@ Lean, public-safe baseline evidence set (curated for validity and low bloat).
     - `docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md`
     - `docs/THEORETICAL_MAX_BIGINT_2026-03-19.md`
     - `docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md`
+    - `docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`
 - `benchmarks/all_runs/bench_runs/`: curated high-signal run set only:
   - `safe_peak_final_20260317_190159`
   - `limit_hunt_5p45e20_20260319_015446`
@@ -31,6 +38,8 @@ Lean, public-safe baseline evidence set (curated for validity and low bloat).
   - `native_2w_550bps_bigblk_FINAL_20260319_180047.log`
   - `native_unique_1w15bps_big_20260319_182744.log`
   - `native_unique_2w550bps_big_20260319_182803.log`
+  - `strict_no_doublecount_20260320_031126.log`
+  - `strict_no_doublecount_saturation_20260320_031157.log`
 - `benchmarks/failures/`: fixed/open issue evidence and status ledger.
 - `benchmarks/profiles/evm/`: EVM hot-path profile artifacts (before + latest-after).
 

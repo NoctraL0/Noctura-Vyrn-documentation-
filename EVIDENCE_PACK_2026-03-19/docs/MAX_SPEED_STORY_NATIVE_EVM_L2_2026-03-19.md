@@ -1,10 +1,10 @@
-# Vyrn Max-Speed Story (Native, EVM, L2) - 2026-03-19
+# Vyrn Max-Speed Story (Native, EVM, L2) - 2026-03-20
 
 This is the benchmark story behind the current speed envelope, using the latest logs and summaries in this pack.
 
 ## Chapter 1: Native has baseline-safe, peak-safe, and theoretical peak evidence
 
-The native lane now has three clearly separated truths:
+The native lane now has four clearly separated truths:
 
 - **Launch-safe baseline** (durable + signed, 1 worker):
   - `545,623,145,378,860,630,016.00 tx/s` (`~5.456e20`)
@@ -20,6 +20,14 @@ The native lane now has three clearly separated truths:
     - `benchmarks/all_runs/bench_runs/native_unique_2w550bps_big_20260319_182803.log`
     - `docs/UNIQUE_SENDER_BENCHMARK_2026-03-19.md`
 
+- **Strict counter-integrity class** (durable + signed + `nonce-sync` + unique sender pool):
+  - tuned 10-BPS shape: `6,425,421,127,134,743,566,077,883,580,416.00 tx/s` (`~6.425e30`)
+  - saturation shape: `428,869,442,090,321,794,019,470,256,111,616.00 tx/s` (`~4.289e32`)
+  - evidence:
+    - `benchmarks/all_runs/bench_runs/strict_no_doublecount_20260320_031126.log`
+    - `benchmarks/all_runs/bench_runs/strict_no_doublecount_saturation_20260320_031157.log`
+    - `docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`
+
 - **Theoretical peak** (guardrails off, big-batch push):
   - best measured: `99,427,130,461,936,492,216,320.00 tx/s` (`~9.943e22`)
   - prior e22 guardrails-off reference: `6,973,281,673,524,083,163,136.00 tx/s` (`~6.973e21`)
@@ -29,6 +37,7 @@ The native lane now has three clearly separated truths:
 
 Interpretation:
 - Safe numbers are no longer represented as one ambiguous value.
+- Strict integrity measurements now include e30+ and e32-class native results with nonce-sync and sender uniqueness controls.
 - Theoretical numbers are now above the safe peaks and explicitly marked non-launch-safe.
 
 ## Chapter 2: EVM is measurable on two ceilings
@@ -66,6 +75,8 @@ Evidence:
 - Safe baseline: `~5.456e20 tx/s`
 - Safe peak (non-unique): `~2.7496e22 tx/s`
 - Safe peak (unique): `~2.7348e22 tx/s`
+- Strict integrity (10-BPS tuned): `~6.425e30 tx/s`
+- Strict integrity (saturation): `~4.289e32 tx/s`
 - Theoretical peak: `~9.943e22 tx/s`
 
 ### EVM maxes
@@ -82,6 +93,7 @@ Evidence:
 The strongest honest framing is:
 - "Safe native baseline is in the `5e20` class."
 - "Safe native throughput peak has crossed `2.7e22` in this evidence pack."
+- "Strict integrity native runs are in the `e30+` and `e32` classes."
 - "Theoretical native peak has crossed `9.9e22` with guardrails off."
 - "EVM and L2 are measured with lane-level maxima, not blended scoreboard numbers."
 

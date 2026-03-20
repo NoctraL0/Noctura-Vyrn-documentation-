@@ -1,0 +1,15 @@
+[go-stress] batch_size=650000000000000000000000000000 exceeds int64 sender planning; set --senders-per-worker explicitly if needed
+[go-stress] rpc=msgpack+unix:///home/vyrn/vyrn/Documents/Vyrn-Chain/.runtime_bigint_docs/dag_rpc_safe_run.sock method=miner_mineRangeSigned sign=true sig_scheme=ed25519 workers=20 batch_size=650000000000000000000000000000 soak_tps=6500000000000000000000000000000 duration=10s
+[go-stress] unique_senders_per_worker=64 total_unique_senders=1280 nonce_sync=true
+[go-stress] mineRange opts: mode=direct root_mode=range assume_new=true chain_id=1337
+
+=== STATS (go-stress) ===
+elapsed_sec       : 10.116068
+txs_committed     : 65000000000000000000000000000000
+blocks_mined      : 100
+tx_per_second     : 6425421127134743566077883580416.00
+blocks_per_second : 9.89
+avg_txs_per_block : 649999999999999970703759638528.00
+p50               : 0.007795s
+p90               : 0.021281s
+p99               : 0.028610s
