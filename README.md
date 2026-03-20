@@ -51,14 +51,14 @@ This pack contains reproducible evidence for Vyrn performance from launch-safe t
 - Obvious secret-like values are redacted when present.
 
 ## Entry points
-- [Pack index](./INDEX.md)
-- [Failure status ledger](./benchmarks/failures/FAILURE_STATUS.md)
-- [Stress results ledger](./docs/STRESS_RESULTS_LEDGER.md)
-- [Safe durable stress commands](./docs/SAFE_DURABLE_STRESS_COMMANDS.md)
-- [Safe Max (All Lanes, BigInt refresh)](./docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md)
-- [Theoretical Max (BigInt + larger blocks)](./docs/THEORETICAL_MAX_BIGINT_2026-03-19.md)
-- [Unique Sender Native Benchmarks](./docs/UNIQUE_SENDER_BENCHMARK_2026-03-19.md)
-- [Max-Speed Story (Native, EVM, L2)](./docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md)
+- [Pack index](./EVIDENCE_PACK_2026-03-19/INDEX.md)
+- [Failure status ledger](./EVIDENCE_PACK_2026-03-19/benchmarks/failures/FAILURE_STATUS.md)
+- [Stress results ledger](./EVIDENCE_PACK_2026-03-19/docs/STRESS_RESULTS_LEDGER.md)
+- [Safe durable stress commands](./EVIDENCE_PACK_2026-03-19/docs/SAFE_DURABLE_STRESS_COMMANDS.md)
+- [Safe Max (All Lanes, BigInt refresh)](./EVIDENCE_PACK_2026-03-19/docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md)
+- [Theoretical Max (BigInt + larger blocks)](./EVIDENCE_PACK_2026-03-19/docs/THEORETICAL_MAX_BIGINT_2026-03-19.md)
+- [Unique Sender Native Benchmarks](./EVIDENCE_PACK_2026-03-19/docs/UNIQUE_SENDER_BENCHMARK_2026-03-19.md)
+- [Max-Speed Story (Native, EVM, L2)](./EVIDENCE_PACK_2026-03-19/docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md)
 
 ## Reproducibility note
 This pack is intended as public evidence, not full raw telemetry export.  
