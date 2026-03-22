@@ -63,6 +63,7 @@ This pack contains reproducible evidence for Vyrn performance, centered on launc
 - [Native Strict No-Double-Count Validation](./EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md)
 - [Max-Speed Story (Native, EVM, L2)](./EVIDENCE_PACK_2026-03-19/docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md)
 - [Website Transaction (Native, Video)](https://youtu.be/nxjUi2ojjC4?si=Tmnr4fr0umv39C9T)
+- [Terminal Tx/Sec Test (Current, Native, Video)](https://youtu.be/3i62ka8ZrmM?si=P9Fccij9cmuSNRfo)
 ## Reproducibility note
 This pack is intended as public evidence, not full raw telemetry export.  
 For private deep-dive analysis, keep raw local artifacts outside the public bundle.
