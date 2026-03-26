@@ -40,12 +40,12 @@ This split is deliberate so claims remain verifiable and honest.
 
 ## Start Here (Evidence)
 
-- Pack index: `public_release/EVIDENCE_PACK_2026-03-19/INDEX.md`
-- Safe max summary: `public_release/EVIDENCE_PACK_2026-03-19/docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md`
-- Strict no-double-count validation: `public_release/EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`
-- Strict BigInt order sweep (latest): `public_release/EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_BIGINT_ORDER_SWEEP_2026-03-25.md`
-- Legacy theoretical archive (deprecated for headline claims): `public_release/EVIDENCE_PACK_2026-03-19/docs/THEORETICAL_MAX_BIGINT_2026-03-19.md`
-- Failure ledger (fixed/open): `public_release/EVIDENCE_PACK_2026-03-19/benchmarks/failures/FAILURE_STATUS.md`
+- Pack index: `EVIDENCE_PACK_2026-03-19/INDEX.md`
+- Safe max summary: `EVIDENCE_PACK_2026-03-19/docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md`
+- Strict no-double-count validation: `EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`
+- Strict BigInt order sweep (latest): `EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_BIGINT_ORDER_SWEEP_2026-03-25.md`
+- Legacy theoretical archive (deprecated for headline claims): `EVIDENCE_PACK_2026-03-19/docs/THEORETICAL_MAX_BIGINT_2026-03-19.md`
+- Failure ledger (fixed/open): `EVIDENCE_PACK_2026-03-19/benchmarks/failures/FAILURE_STATUS.md`
 
 ## Public Media Proof
 
