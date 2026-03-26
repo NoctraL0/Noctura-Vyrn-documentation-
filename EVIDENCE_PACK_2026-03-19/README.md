@@ -56,7 +56,6 @@ This pack contains reproducible evidence for Vyrn performance, centered on launc
 - Obvious secret-like values are redacted when present.
 
 ## Entry points
-- [Buyer-Ready Pack (Acquisition + Diligence + Verification)](../BUYER_READY_PACK_2026-03-20/README.md)
 - [Pack index](./INDEX.md)
 - [Failure status ledger](./benchmarks/failures/FAILURE_STATUS.md)
 - [Stress results ledger](./docs/STRESS_RESULTS_LEDGER.md)
