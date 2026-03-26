@@ -1,69 +1,74 @@
-# Vyrn Public Evidence Pack
+# Vyrn Chain
 
-## Proven Speed, Not Hype
-This pack contains reproducible evidence for Vyrn performance, centered on launch-safe and strict-integrity benchmark classes.
+Vyrn is a high-throughput Layer 1 focused on signed native execution, durability guardrails, and practical compatibility lanes (EVM, WASM, BPF, and Go L2) without turning performance claims into black-box marketing.
 
-### Speed at a glance
-- Native safe baseline (durable + signed, 1 worker): `545,623,145,378,860,630,016.00 tx/s` (`~5.456e20`)
-- Native safe peak (durable + signed, 2 workers, max batch): `27,495,991,062,506,292,379,648.00 tx/s` (`~2.7496e22`)
-- Native safe peak (unique senders, durable + signed): `27,348,041,002,392,110,497,792.00 tx/s` (`~2.7348e22`)
-- Native strict integrity run (10-BPS tuned, nonce-sync, 1280 unique senders): `6,425,421,127,134,743,566,077,883,580,416.00 tx/s` (`~6.425e30`) at `9.89 blocks/s`
-- Native strict integrity run (saturation shape, same strict checks): `428,869,442,090,321,794,019,470,256,111,616.00 tx/s` (`~4.289e32`) at `659.80 blocks/s`
-- Legacy theoretical archive (deprecated, non-benchmark-grade): `99,427,130,461,936,492,216,320.00 tx/s` (`~9.943e22`)
-- L2 Go safe profile ceiling: `~2.86e6 ops/s` (health/read), `~8.64e5 ops/s` (outbox), `~7.95e5 ops/s` (mixed)
-- EVM Go-fastpath peak: `385,562 ops/s` (execute microbench), `3,262.09 calls/s` (RPC probe)
+## Why This Repo Exists
 
-## Snapshot
-- Date: 2026-03-20
-- Scope: baseline evidence + profiling + documented failures (fixed/open) + unique-sender reruns + strict no-double-count validation + deprecated theoretical archive retained for history
-- Footprint: 85 files (~1.4 MB)
-- Current headline metrics:
-  - Native safe baseline: `5.456e20 tx/s`
-  - Native safe peak: `2.7496e22 tx/s`
-  - Native strict integrity saturation run: `4.289e32 tx/s`
+This repository is both:
+- active chain/runtime development code
+- a public evidence trail for benchmark and compatibility progress
 
-## What this pack contains
-- `docs/`
-  - architecture and compatibility notes
-  - safe launch/stress command baselines
-  - EVM and L2 progress docs
-- `benchmarks/all_runs/bench_runs/`
-  - curated high-signal run artifacts only
-  - summaries/reports plus selected logs needed for verification
-- `benchmarks/failures/`
-  - `fixed/`: issues with recovery evidence
-  - `open/`: known stress-shape limitations still tracked
-- `benchmarks/profiles/evm/`
-  - EVM hot-path profiles (before/after optimization passes)
+If you only want proof first, jump to the public evidence bundle:
+- `public_release/README.md`
+- `public_release/EVIDENCE_PACK_2026-03-19/README.md`
 
-## Data policy
-- Included:
-  - reproducible run evidence
-  - summaries and reports
-  - selected inferno SVG profiles
-- Excluded:
-  - raw chain state/payload directories (`chain_data/*`, `phase*_data/*`, etc.)
-  - startup/misinput-only incidents
-  - duplicate/intermediate/noisy artifacts
+## Current Performance Snapshot
 
-## Validation and safety
-- JSON artifacts parse cleanly (`jq`).
-- SVG artifacts parse cleanly (`xmllint`).
-- Local absolute paths are redacted (`<REPO_ROOT>`, `<REDACTED_PATH>`).
-- Obvious secret-like values are redacted when present.
+These are lane-specific metrics from published artifacts.
 
-## Entry points
-- [Pack index](./EVIDENCE_PACK_2026-03-19/INDEX.md)
-- [Failure status ledger](./EVIDENCE_PACK_2026-03-19/benchmarks/failures/FAILURE_STATUS.md)
-- [Stress results ledger](./EVIDENCE_PACK_2026-03-19/docs/STRESS_RESULTS_LEDGER.md)
-- [Safe durable stress commands](./EVIDENCE_PACK_2026-03-19/docs/SAFE_DURABLE_STRESS_COMMANDS.md)
-- [Safe Max (All Lanes, BigInt refresh)](./EVIDENCE_PACK_2026-03-19/docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md)
-- [Legacy Theoretical Archive (deprecated)](./EVIDENCE_PACK_2026-03-19/docs/THEORETICAL_MAX_BIGINT_2026-03-19.md)
-- [Unique Sender Native Benchmarks](./EVIDENCE_PACK_2026-03-19/docs/UNIQUE_SENDER_BENCHMARK_2026-03-19.md)
-- [Native Strict No-Double-Count Validation](./EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md)
-- [Max-Speed Story (Native, EVM, L2)](./EVIDENCE_PACK_2026-03-19/docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md)
-- [Website Transaction (Native, Video)](https://youtu.be/nxjUi2ojjC4?si=Tmnr4fr0umv39C9T)
-- [Terminal Tx/Sec Test (Current, Native, Video)](https://youtu.be/3i62ka8ZrmM?si=P9Fccij9cmuSNRfo)
-## Reproducibility note
-This pack is intended as public evidence, not full raw telemetry export.  
-For private deep-dive analysis, keep raw local artifacts outside the public bundle.
+- Native safe baseline (durable + signed): `~5.456e20 tx/s`
+- Native safe peak (durable + signed): `~2.7496e22 tx/s`
+- Native strict integrity (10-BPS tuned): `~6.425e30 tx/s`
+- Native strict integrity (saturation shape): `~4.289e32 tx/s`
+- Native strict BigInt order sweep (signed + durable, non-node-safe BPS stress shape): `~1.089e513 tx/s`
+- EVM Go fastpath execute microbench: `385,562 ops/s`
+- EVM RPC probe ceiling: `3,262.09 calls/s`
+- L2 Go safe profile: `~2.86e6 ops/s` (read), `~8.64e5 ops/s` (outbox), `~7.95e5 ops/s` (mixed)
+
+Important:
+- Do not compare `tx/s`, `ops/s`, and `calls/s` as one blended scoreboard.
+- Node-safe deployment profiles and extreme stress-shape profiles are reported separately.
+
+## Benchmark Integrity Model
+
+Vyrn benchmark docs intentionally separate run classes:
+- launch-safe baselines (durable, signed, checkpointed)
+- strict-integrity stress (signed + durable with stronger counter discipline)
+- legacy theoretical archives (kept for history, not headline benchmarking)
+
+This split is deliberate so claims remain verifiable and honest.
+
+## Start Here (Evidence)
+
+- Pack index: `public_release/EVIDENCE_PACK_2026-03-19/INDEX.md`
+- Safe max summary: `public_release/EVIDENCE_PACK_2026-03-19/docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md`
+- Strict no-double-count validation: `public_release/EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`
+- Strict BigInt order sweep (latest): `public_release/EVIDENCE_PACK_2026-03-19/docs/NATIVE_STRICT_BIGINT_ORDER_SWEEP_2026-03-25.md`
+- Legacy theoretical archive (deprecated for headline claims): `public_release/EVIDENCE_PACK_2026-03-19/docs/THEORETICAL_MAX_BIGINT_2026-03-19.md`
+- Failure ledger (fixed/open): `public_release/EVIDENCE_PACK_2026-03-19/benchmarks/failures/FAILURE_STATUS.md`
+
+## Public Media Proof
+
+- Website transaction demo (native): https://youtu.be/nxjUi2ojjC4?si=Tmnr4fr0umv39C9T
+- Terminal tx/sec benchmark demo (native): https://youtu.be/3i62ka8ZrmM?si=P9Fccij9cmuSNRfo
+
+## Repository Layout
+
+- `dag_rpc_server.py`: native DAG RPC server path and range mining surface
+- `rpc_server_v1.py`: main RPC entry surface
+- `evm_runtime.py`, `go_evm_fastpath.py`: EVM compatibility path
+- `wasm_runtime.py`, `go_wasm/`: WASM compatibility path
+- `bpf_runtime.py`: BPF compatibility path
+- `go_l2/`: Go L2 engine and benchmarks
+- `public_release/`: GitHub-safe evidence and buyer-facing bundles
+
+## Data / Redaction Policy
+
+Public bundles are curated to stay verifiable and safe:
+- includes reproducible logs, summaries, and selected profiles
+- excludes raw chain payload/state trees and noisy intermediate artifacts
+- redacts local absolute paths and obvious secret-like fields where present
+
+## Status
+
+Vyrn is in active development. Numbers and compatibility lanes are continuously revalidated, and all major updates are expected to land with evidence artifacts, not just claims.
