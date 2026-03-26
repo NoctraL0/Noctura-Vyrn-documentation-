@@ -1,16 +1,17 @@
-# Vyrn Public Evidence Pack (2026-03-20)
+# Vyrn Public Evidence Pack (2026-03-25)
 
 Lean, public-safe baseline evidence set (curated for validity and low bloat).
 
 ## Headline metrics
+- Native strict integrity (BigInt order sweep, signed + durable, non-node-safe BPS stress shape): `~1.089e513 tx/s`
 - Native strict integrity (saturation): `~4.289e32 tx/s`
 - Native strict integrity (10-BPS tuned): `~6.425e30 tx/s`
 - Native safe peak (durable): `~2.7496e22 tx/s`
 - Native safe baseline (durable): `~5.456e20 tx/s`
 
 ## Current footprint
-- 85 files
-- ~1.4 MB
+- 90 files
+- ~1.48 MB
 
 ## Validity checks (passed)
 - All `*.json` parse cleanly with `jq`.
@@ -20,6 +21,7 @@ Lean, public-safe baseline evidence set (curated for validity and low bloat).
 - `docs/`: architecture, performance, compatibility, and safe command baselines.
   - includes fresh BigInt refresh docs:
     - `docs/SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md`
+    - `docs/NATIVE_STRICT_BIGINT_ORDER_SWEEP_2026-03-25.md`
     - `docs/THEORETICAL_MAX_BIGINT_2026-03-19.md` (legacy theoretical archive, deprecated for headline benchmarking)
     - `docs/MAX_SPEED_STORY_NATIVE_EVM_L2_2026-03-19.md`
     - `docs/NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`
@@ -33,6 +35,7 @@ Lean, public-safe baseline evidence set (curated for validity and low bloat).
   - `bigint_highbatch_refresh_20260319_201037`
   - `e22_guardrails_ab_20260319_201707` (legacy theoretical archive, deprecated for headline benchmarking)
   - `theory_bigbatch_push_20260319_205422` (legacy theoretical archive, deprecated for headline benchmarking)
+  - `native_bigint_order_sweep_20260325` (strict-integrity BigInt order sweep: e64/e128/e513 classes)
   - `engine_probe_20260319_163228`
   - `native_safe_1w_15bps_bigint_hi_20260319_175137.log`
   - `native_2w_550bps_bigblk_FINAL_20260319_180047.log`

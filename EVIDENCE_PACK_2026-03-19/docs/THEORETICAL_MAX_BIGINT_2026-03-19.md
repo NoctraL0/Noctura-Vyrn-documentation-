@@ -17,12 +17,15 @@ Strict integrity reference (separate from theoretical methodology):
 - `428,869,442,090,321,794,019,470,256,111,616.00 tx/s` (`~4.289e32`)
 - case: `strict_no_doublecount_saturation_20260320_031157`
 - profile class: durable + signed + `nonce-sync` + unique sender pool
+- newer strict BigInt sweep reference (same integrity family, non-node-safe BPS stress shape):
+  - `~1.089e513 tx/s`
+  - case: `native_max_tps_20260325_203807_e512`
 
 ## Scope and Honesty
 - This benchmark is theoretical only (non-launch-safe).
 - It uses memory-store profile and disabled durability/safety gates to find ceiling.
 - It is not an EVM opcode TPS claim.
-- Pack-level maximum magnitude can be higher under strict launch-safe saturation profiles; those are tracked in `SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md` and `NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`.
+- Pack-level maximum magnitude can be higher under strict launch-safe/signed profiles; those are tracked in `SAFE_MAX_ALL_LANES_BIGINT_2026-03-19.md`, `NATIVE_STRICT_NO_DOUBLECOUNT_VALIDATION_2026-03-20.md`, and `NATIVE_STRICT_BIGINT_ORDER_SWEEP_2026-03-25.md`.
 - Current benchmark headlines should use strict-integrity results, not this legacy archive.
 
 ## Theoretical Profile Used
